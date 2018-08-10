@@ -86,8 +86,7 @@ a img {
 	outline: 0;
 }
 a img:hover {
-	background-color: #262525;
-	opacity: 0.2;
+	opacity: 0.8;
 }
 .preview a:hover {
 	border: none;

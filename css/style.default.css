@@ -85,6 +85,10 @@ a img {
  	border: none;
 	outline: 0;
 }
+a img:hover {
+	color: #0073AE;
+	opacity: 0.5;
+}
 .preview a:hover {
 	border: none;
 }

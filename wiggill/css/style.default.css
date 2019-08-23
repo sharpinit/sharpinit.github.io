@@ -35,14 +35,26 @@ body{
 }
 
 a {
-	color: #FFFFFF;
+	color: #777777;
 	text-decoration: none;
 }
 a:hover {
-	color: #FFFFFF;
+	color: #777777;
 	text-decoration: underline;
 }
 a:focus {
+	color: #777777;
+	outline: none;
+}
+a.white {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.white:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+a.white:focus {
 	color: #FFFFFF;
 	outline: none;
 }

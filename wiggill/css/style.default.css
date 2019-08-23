@@ -61,8 +61,12 @@ html {
 	font-size: 62.5%;
 
 }
-
-
+.space{
+	margin: 20px;
+}
+.tab { 
+	text-indent:23px 
+}
 /*------------------------------*/
 /* --- Body --- */
 

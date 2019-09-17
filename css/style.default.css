@@ -89,11 +89,12 @@ a.ext2:focus {
 }
 a {
 	text-decoration: none;
-	color: #949B50;
+	color: #0073AE;
 }
 a:hover {
 	color: #0073AE;
 	text-decoration: none;
+	border-bottom: 2px solid #0073AE;
 }
 a:focus {
 	outline: none;

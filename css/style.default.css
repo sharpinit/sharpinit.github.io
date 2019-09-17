@@ -133,8 +133,8 @@ ul, li, a {
 	padding-bottom: 20px;
 }
 .logopad {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 25px;
+	padding-bottom: 15px;
 }
 
 /*------------------------------*/
@@ -150,15 +150,22 @@ ul, li, a {
 #pageFooter label {
 	display: block;
 }
-#pageFooter a {
+#Foot a {
 	text-decoration: none;
-	color: #EFF4D1;
-	padding: .25em;
+	color: #999999;
+	
 }
-#pageFooter a:hover {
+#Foot a:hover {
 	text-decoration: none;
-	color: #0073AE;
-	text-decoration: none;
+	color: #999999;
+	border-bottom: 2px solid #999999;
+}
+#pageFooter {
+	position:relative;
+	background-color:#555555;
+	color: #999999;
+	height:auto;
+	padding-bottom: 2.5rem;	
 }
 
 /*------------------------------*/
@@ -241,13 +248,6 @@ body, p{
 	width: 100%;
 	margin: 0 auto;
 }
-#pageFooter {
-	position:relative;
-	background-color:#C4C99C;
-	color: #EFF4D1;
-	height:auto;
-	padding-bottom:20px;	
-}
 .footer, .push {
 	height: 4rem;
 }
@@ -283,13 +283,6 @@ body, p {
 	font-size: 1.6rem;
 	width: 100%;
 	margin: 0 auto;
-}
-#pageFooter {
-	position:relative;
-	background-color:#C4C99C;
-	color: #EFF4D1;
-	height:auto;
-	padding-bottom: 20px;	
 }
 .footer, .push {
 	height: 4rem;
@@ -331,13 +324,7 @@ body,p {
 	width: 100%;
 	margin: 0 auto;
 }
-#pageFooter {
-	position:relative;
-	background-color:#C4C99C;
-	color: #EFF4D1;
-	height:auto;
-	padding-bottom: 20px;	
-}
+
 .footer, .push {
 	height: 4rem;
 }
@@ -384,13 +371,6 @@ body,p {
 	width: 100%;
 	margin: 0 auto;
 	margin-top: .5rem;
-}
-#pageFooter {
-	position:relative;
-	background-color:#C4C99C;
-	color: #EFF4D1;
-	height:auto;
-	padding-bottom: 20px;	
 }
 .footer, .push {
 	height: 4rem;

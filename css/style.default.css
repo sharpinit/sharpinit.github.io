@@ -36,8 +36,7 @@ address, article, aside, canvas, details, figcaption, figure, footer, header, hg
 body{
 	/*font-family: InterUI,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Oxygen,Ubuntu,Cantarell,Open Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;*/
 	font-family:'Raleway', sans-serif;
-	color: #414243;
-	opacity: .75;
+	color: #777777;
 	font-weight: normal;
 	font-style: normal;
 	background-color:#FAFAFA;
@@ -60,8 +59,7 @@ body{
 	background:#FAFAFA url(../img/Texture.png);
 }
 p {
-	color: #414243;
-	opacity: .75;
+	color: #777777;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -73,6 +71,12 @@ hr {
 	height:1px;
 	background-color:#DEE1D3;
 		
+}
+a.selected {
+	color: #0073AE;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: 2px solid #0073AE;
 }
 a.ext2 {
 	text-decoration: none;
@@ -126,8 +130,10 @@ html {
 nav ul {
 	list-style: none;
 }
-ul, li, a {
+ul, li {
 	list-style: none;
+	padding: initial;
+	margin: 0;
 }
 #logopad {
 	padding-top: 20px;

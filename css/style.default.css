@@ -47,6 +47,16 @@ body{
 	background-size: contain;
 	height:41px;
 }
+#footerlogo {
+	background-image: url(../img/SharpFooter.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height:41px;
+	width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 .header-nav {
 	color: #949B50;
 	font-size: 1.8rem;
@@ -75,13 +85,13 @@ hr {
 a.selected {
 	color: #0073AE;
 	text-decoration: none;
-	font-weight: bold;
-	border-bottom: 2px solid #0073AE;
+	font-weight: semibold;
+	border-bottom: 1px solid #0073AE;
 }
 a.ext2 {
 	text-decoration: none;
 	color: #0073AE;
-	font-weight: bold;
+	font-weight: semibold;
 }
 a.ext2:hover {
 	color: #0073AE;

@@ -41,6 +41,11 @@ body{
 	font-style: normal;
 	background-color:#FAFAFA;
 }
+.header {
+	margin:auto;
+	max-width:1024px;
+	width:90%;
+}
 #logo {
 	background-image: url(../img/Sharp.png);
 	background-repeat: no-repeat;

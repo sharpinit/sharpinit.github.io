@@ -41,6 +41,13 @@ body{
 	font-style: normal;
 	background-color:#FAFAFA;
 }
+.workimage{
+	border:1px; 
+	border-style: solid;
+	border-color: #999999;
+	background-color: white;
+	border-radius: 50%;
+}
 .header {
 	margin:auto;
 	max-width:1024px;

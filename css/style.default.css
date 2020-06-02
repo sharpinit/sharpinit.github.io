@@ -180,18 +180,18 @@ ul, li {
 }
 #Foot a {
 	text-decoration: none;
-	color: #999999;
+	color: #cccccc;
 	
 }
 #Foot a:hover {
 	text-decoration: none;
-	color: #999999;
+	color: #cccccc;
 	border-bottom: 2px solid #999999;
 }
 #pageFooter {
 	position:relative;
 	background-color:#555555;
-	color: #999999;
+	color: #cccccc;
 	height:auto;
 	padding-bottom: 2.5rem;	
 }

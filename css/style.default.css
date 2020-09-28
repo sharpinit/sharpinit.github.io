@@ -43,11 +43,13 @@ body{
 	background-color:#FAFAFA;
 }
 .workimage{
-	border:1px; 
-	border-style: solid;
-	border-color: #999999;
-	background-color: white;
-	border-radius: 50%;
+	border-radius: 1rem;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.38);
+	background-image: url("path/to/image.png");
+	background-size: contain;
+    background-repeat: no-repeat;
+	width:100%;
+	overflow: scroll;
 }
 .header {
 	margin:auto;
@@ -289,7 +291,6 @@ header {
 	text-align: center;
 }
 .welcome-subtitle {
-	margin-top: .5rem;
 	font-size: 2.4rem;
 	text-align: center;
 }
@@ -297,7 +298,6 @@ body, p{
 	font-size: 1.6rem;
 	width: 100%;
 	margin: 0 auto;
-	text-align: center;
 }
 .footer, .push {
 	height: 4rem;
@@ -346,8 +346,6 @@ header {
 	line-height: 4rem;
 }
 .welcome-subtitle {
-	margin-top: .5rem;
-	
 	font-size: 2.4rem;
 }
 body, p {
@@ -400,8 +398,6 @@ header {
 	line-height: 6.6rem;
 }
 .welcome-subtitle {
-	margin-top: .5rem;
-	
 	font-size: 2.4rem;
 }
 body,p {
@@ -457,7 +453,6 @@ header {
 	line-height: 6.6rem;
 }
 .welcome-subtitle {
-	margin-top: .5rem;
 	font-size: 2.4rem;
 }
 body,p {

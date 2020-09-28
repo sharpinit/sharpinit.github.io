@@ -71,12 +71,18 @@ body{
 	margin-right: auto;
 }
 .header-nav {
-	color: #949B50;
 	font-size: 1.8rem;
 	display: inline-block;
 	display: table;
     margin: 0 auto;
 	float:right;
+}
+.endbtns {
+	font-size: 1.8rem;
+	display: inline-block;
+	display: table;
+    margin: 0 auto;
+	float:center;
 }
 .welcome-body{
 	background:#FAFAFA url(../img/Texture.png);
@@ -222,6 +228,13 @@ ul, li {
 	margin-top:10px;
 	margin-bottom:10px;
 	box-shadow: 0 0 5px 0 rgba(0,0,0,0.38);
+	border-radius: 1rem;
+}
+.imagesnoborder {
+	width:100%;
+	max-width:100%;
+	margin-top:10px;
+	margin-bottom:10px;
 }
 .myimage {
 	width:100%;

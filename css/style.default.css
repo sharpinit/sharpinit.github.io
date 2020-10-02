@@ -42,8 +42,23 @@ body{
 	font-style: normal;
 	background-color:#FAFAFA;
 }
+.workimgAS{
+	background-image: url("../img/Airstack.png");
+}
+.workimgAC{
+	background-image: url("../img/airclass.png");
+}
+.workimgHE{
+	background-image: url("../img/HealthEquityCover.png");
+}
+.workimgSG{
+	background-image: url("../img/SafeguardCover.png");
+}
+.workimgLD{
+	background-image: url("../img/LandeskCover.png");
+}
 .hero-image {
-	height: 350px;
+	height: 400px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

@@ -99,6 +99,9 @@ body{
     margin: 0 auto;
 	float:right;
 }
+.welcome-nav {
+	font-size: 1.8rem !important;
+}
 .endbtns {
 	font-size: 1.8rem;
 	display: inline-block;

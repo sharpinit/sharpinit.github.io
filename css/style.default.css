@@ -42,6 +42,14 @@ body{
 	font-style: normal;
 	background-color:#FAFAFA;
 }
+.selfimg{
+	background:  url(../img/Self.png);
+	width: 405px;
+	height: 404px;
+}
+.selfimg:hover{
+	background:  url(../img/Self2.png);
+}
 .workimgAS{
 	background-image: url("../img/Airstack.png");
 }
@@ -193,6 +201,7 @@ a.phone:hover {
 }
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 nav ul {

@@ -19,12 +19,14 @@
 address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
 	display: block;
 }
-html { 
+html {
+	height: 100%;
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 	margin: 0rem;
 }
-body{ 
+body{
+	height: 100%;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
 	color: #666666;
@@ -88,7 +90,8 @@ a.selected {
 	background:url(../img/Texture.png);
 }
 .welcome {
-	padding: 13.2vmax 2rem;
+	position: relative;
+	top: 25%
 }
 .welcomegrid {
 	max-width: 1024px;

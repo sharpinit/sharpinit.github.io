@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Color palette 
+#FAFAFA		Background
+#0073AE		Sharp Blue
+#666666		Foreground Gray
+#555555		Footer Background Gray
+#CCCCCC		Footer Foreground
+*/
+
+@import url('animate.css');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+html { 
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	margin: 0rem;
+}
+body{ 
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+	color: #666666;
+	background-color:#FAFAFA;
+}
+
+ul, li {
+	list-style: none;
+	padding: initial;
+	margin: 0rem 0 1.5rem 0;
+	font-size: 1.8rem;
+}
+
+p{ 
+	margin: 1rem 0 1rem 0;
+	color: inherit;
+	display: block;
+	font-size: 2.4rem;
+	font-weight: normal;
+	font-style: normal;
+}
+h1{
+	font-size:  4.2rem;
+	font-weight: inherit;
+	margin-block: .5rem;
+}
+h2{
+	font-size:  3.2rem;
+	font-weight: inherit;
+	margin-block: .5rem;
+}
+
+hr{
+	max-width: 1024px;
+	border:1px solid #cccccc;
+}
+.endalign{
+	justify-self:end;
+	text-align: center;
+}
+.centeralign{
+	justify-self:center;
+	text-align: center;
+}
+a{
+	color: #0073AE; 
+	text-decoration: none;
+}
+a:hover{
+	color: #0073AE; 
+	text-decoration: underline;
+}
+a.selected {
+	color: #0073AE;
+	text-decoration: underline;
+	font-weight: semibold;
+}
+
+/* Welcome */
+.welcome-body{
+	background:url(../img/Texture.png);
+}
+.welcome {
+	padding: 13.2vmax 2rem;
+}
+.welcomegrid {
+	max-width: 1024px;
+	margin: 0 auto;
+	grid-gap: 1rem;
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.welcomeimage {
+	max-width: 100%;
+	max-height: 100%;
+}
+.welcomebtn{ 
+	margin: 2rem 4rem 2rem 0;
+	display: block;
+	font-size: 2.4rem;
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Header */
+.header {
+	background-size: cover;
+	padding: 0vmax 2rem;
+}
+.headergrid {
+	max-width: 1024px;
+	padding: 1.8rem 0 1.8rem 0;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1rem;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+}
+.navbtngrid {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 1rem;
+	align-items: center;
+}
+.navbtn{ 
+	margin: 0 0 0 4rem;
+	display: block;
+	font-size: 2.4rem;
+	font-weight: normal;
+	font-style: normal;
+}
+.logo {
+	max-width: 100%;
+	max-height: 8.0rem;
+	padding: 1rem 0rem;
+}
+
+/* About */
+.aboutme {
+	padding: 2vmax 2rem;
+}
+.aboutmegrid {
+	max-width: 1024px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
+}
+.workhistory {
+	padding: 2vmax 2rem;
+}
+.workhistorygrid {
+	max-width: 1024px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
+}
+
+/* Hero
+.hero {
+	background: url("../img/stars.png"), linear-gradient(151deg, #00BEFF 0%, #871AFF 100%), center;
+	padding: 13.2vmax 2rem;
+	color: white;
+}
+.herogrid {
+	max-width: 1024px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1rem;
+	align-items: center;
+	grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
+}
+
+Contact
+.contact {
+	padding: 13.2vmax 2rem;
+}
+.contactgrid {
+	max-width: 1024px;
+	margin: 0 auto;
+	grid-gap: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.map{
+	flex-grow: 2;
+}
+a.link {
+	text-decoration: none;
+	color: #003040;
+	font-weight: semibold;
+}
+a.link:hover {
+	color: #003040;
+	text-decoration: none;
+	border-bottom: 2px solid #003040;
+}*/
+
+/* Footer */
+.footer {
+	background: #555555;
+	padding: 2.5rem;
+	color: #cccccc;
+}
+.footergrid {
+	max-width: 1024px;
+	margin: 0 auto;
+	grid-gap: 1rem;
+	display: grid;
+	align-items: center;
+	grid-template-rows: repeat(auto-fit, minmax(8.0rem, 1fr));
+}
+.copyright{ 
+	font-size: 1.8rem;
+	display: block;
+	font-weight: lighter;
+}
+a.foot {
+	text-decoration: none;
+	color: #cccccc;
+}
+a.foot:hover {
+	color: #cccccc;
+	text-decoration: none;
+	border-bottom: 2px solid #cccccc;
+}
+

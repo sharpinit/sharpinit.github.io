@@ -87,7 +87,7 @@ a.selected {
 
 /* Welcome */
 .welcome-body{
-	background:url(../img/Texture.png);
+	background:#FAFAFA url(../img/Texture.png);
 }
 .welcome {
 	position: relative;

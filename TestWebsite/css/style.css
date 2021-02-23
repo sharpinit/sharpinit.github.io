@@ -26,6 +26,7 @@ html {
 	margin: 0rem;
 }
 body{
+	font-size: 2.4rem;
 	height: 100%;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
@@ -58,6 +59,11 @@ h2{
 	font-weight: inherit;
 	margin-block: .5rem;
 }
+h3{
+	font-size:  2.4rem;
+	font-weight: inherit;
+	margin-block: .5rem;
+}
 
 hr{
 	max-width: 1024px;
@@ -84,35 +90,6 @@ a.selected {
 	text-decoration: underline;
 	font-weight: semibold;
 }
-
-/* Welcome */
-.welcome-body{
-	background:#FAFAFA url(../img/Texture.png);
-}
-.welcome {
-	position: relative;
-	top: 25%
-}
-.welcomegrid {
-	max-width: 1024px;
-	margin: 0 auto;
-	grid-gap: 1rem;
-	display: grid;
-	align-items: center;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.welcomeimage {
-	max-width: 100%;
-	max-height: 100%;
-}
-.welcomebtn{ 
-	margin: 2rem 4rem 2rem 0;
-	display: block;
-	font-size: 2.4rem;
-	font-weight: normal;
-	font-style: normal;
-}
-
 /* Header */
 .header {
 	background-size: cover;
@@ -132,9 +109,10 @@ a.selected {
 	flex-wrap: wrap;
 	grid-gap: 1rem;
 	align-items: center;
+	margin-block: .5rem;
 }
 .navbtn{ 
-	margin: 0 0 0 4rem;
+	margin: 0 4rem 0 0;
 	display: block;
 	font-size: 2.4rem;
 	font-weight: normal;
@@ -144,6 +122,116 @@ a.selected {
 	max-width: 100%;
 	max-height: 8.0rem;
 	padding: 1rem 0rem;
+}
+
+
+/*SinglePage*/
+.hello {
+	background: #FAFAFA url(../img/Texture.png);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+	padding: 0 2rem 8vmax 2rem;
+}
+.hellogrid {
+	max-width: 1024px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1.6rem;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.hero2grid {
+	max-width: 1024px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1.6rem;
+	align-items: center;
+	grid-template-columns: 1;
+}
+.about {
+	padding: 8vmax 2rem;
+}
+.work {
+	padding: 8vmax 2rem;
+}
+.workgrid {
+	max-width: 1024px;
+	margin: 0 auto;
+	display: grid;
+	gap: 2rem 2rem;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.project {
+	background-size: cover;
+	margin: 0vmax 2rem;
+}
+.projectgrid {
+	max-width: 1024px;
+	display: grid;
+	grid-template-columns: .1fr repeat(3, 1fr) .1fr;
+	grid-gap: 1.6rem;
+	margin: 0 auto;
+}
+.projectimg{
+	grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.projectblurb{
+	background-color: rgba(255,255,255,.540);
+	grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    align-self: center;
+	width: 100%;
+}
+.hero-image {
+	width: 100%;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.38);	
+	border-radius: 3px;
+}
+.hero-text {
+  	text-align: center;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	background-color: rgba(255,255,255,0.85);
+	border-radius: 0 0 1rem 1rem;
+  	color: #555555;
+}
+
+
+/* Welcome */
+.welcome-body{
+	background:#FAFAFA url(../img/Texture.png);
+}
+.welcome {
+	position: relative;
+	top: 25%
+}
+.welcomegrid {
+	max-width: 1024px;
+	margin: 0 auto;
+	grid-gap: 1rem;
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.welcomeimage {
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.38);	
+}
+.welcomebtn{ 
+	margin: 2rem 4rem 2rem 0;
+	display: block;
+	font-size: 2.4rem;
+	font-weight: normal;
+	font-style: normal;
 }
 
 /* About */

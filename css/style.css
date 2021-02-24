@@ -256,6 +256,12 @@ a.selected {
 	align-items: center;
 	grid-template-rows: repeat(auto-fit, minmax(8.0rem, 1fr));
 }
+.footerbtns{ 
+	font-size: 1.8rem;
+	display: block;
+	font-weight: lighter;
+	margin: 0px;
+}
 .copyright{ 
 	font-size: 1.8rem;
 	display: block;

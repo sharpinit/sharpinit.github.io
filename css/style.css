@@ -33,14 +33,12 @@ body{
 	color: #666666;
 	background-color:#FAFAFA;
 }
-
 ul, li {
 	list-style: none;
 	padding: initial;
 	margin: 0rem 0 1.5rem 0;
 	font-size: 1.8rem;
 }
-
 p{ 
 	margin: 1rem 0 1rem 0;
 	color: inherit;
@@ -90,6 +88,15 @@ a.selected {
 	text-decoration: underline;
 	font-weight: semibold;
 }
+.image-shadow {
+	width: 100%;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.38);	
+	border-radius: 3px;
+}
+.imagenoborder {
+	width:100%;
+}
+
 /* Header */
 .header {
 	background-size: cover;
@@ -123,9 +130,22 @@ a.selected {
 	max-height: 8.0rem;
 	padding: 1rem 0rem;
 }
+.error {
+	padding: 0 2rem 8vmax 2rem;
+	min-height: 80%;
+}
+.errorgrid {
+	max-width: 1024px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1.6rem;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
 
-/*SinglePage*/
+
+/*Welcome*/
 .hello {
 	background: #FAFAFA url(../img/Texture.png);
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
@@ -139,19 +159,16 @@ a.selected {
 	align-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.hero2grid {
-	max-width: 1024px;
-	margin: 0 auto;
-	display: grid;
-	grid-gap: 1.6rem;
-	align-items: center;
-	grid-template-columns: 1;
+
+.welcomeimage {
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.38);	
 }
-.about {
-	padding: 8vmax 2rem;
-}
+
+/* Work */
 .work {
-	padding: 8vmax 2rem;
+	padding: 4vmax 2rem;
 }
 .workgrid {
 	max-width: 1024px;
@@ -161,9 +178,24 @@ a.selected {
 	align-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
+
+/* About */
+.about {
+	padding: 4vmax 2rem;
+}
+.aboutgrid {
+	max-width: 1024px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1.6rem;
+	align-items: center;
+	grid-template-columns: 1;
+}
+
+/* Project */
 .project {
 	background-size: cover;
-	margin: 0vmax 2rem;
+	margin: 2vmax 2rem;
 }
 .projectgrid {
 	max-width: 1024px;
@@ -179,7 +211,7 @@ a.selected {
     grid-column-end: 6;
 }
 .projectblurb{
-	background-color: rgba(255,255,255,.540);
+	background-color: rgba(255,255,255,.75);
 	grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 1;
@@ -187,114 +219,28 @@ a.selected {
     align-self: center;
 	width: 100%;
 }
-.hero-image {
-	width: 100%;
-	box-shadow: 0 0 5px 0 rgba(0,0,0,0.38);	
-	border-radius: 3px;
-}
-.hero-text {
-  	text-align: center;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	position: absolute;
-	width: 100%;
-	bottom: 0px;
-	background-color: rgba(255,255,255,0.85);
-	border-radius: 0 0 1rem 1rem;
-  	color: #555555;
-}
-
-
-/* Welcome */
-.welcome-body{
-	background:#FAFAFA url(../img/Texture.png);
-}
-.welcome {
-	position: relative;
-	top: 25%
-}
-.welcomegrid {
+.descriptiongrid {
 	max-width: 1024px;
 	margin: 0 auto;
-	grid-gap: 1rem;
 	display: grid;
+	gap: 2rem 2rem;
 	align-items: center;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(2.4rem, 1fr));
 }
-.welcomeimage {
-	width: 100%;
-	border-radius: 50%;
-	box-shadow: 0 0 5px 0 rgba(0,0,0,0.38);	
-}
-.welcomebtn{ 
-	margin: 2rem 4rem 2rem 0;
-	display: block;
-	font-size: 2.4rem;
-	font-weight: normal;
-	font-style: normal;
-}
-
-/* About */
-.aboutme {
-	padding: 2vmax 2rem;
-}
-.aboutmegrid {
-	max-width: 1024px;
-	margin: 0 auto;
+.descriptionsmgrid {
 	display: grid;
-	grid-gap: 1rem;
-	grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
-}
-.workhistory {
-	padding: 2vmax 2rem;
-}
-.workhistorygrid {
-	max-width: 1024px;
-	margin: 0 auto;
-	display: grid;
-	grid-gap: 1rem;
-	grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
-}
-
-/* Hero
-.hero {
-	background: url("../img/stars.png"), linear-gradient(151deg, #00BEFF 0%, #871AFF 100%), center;
-	padding: 13.2vmax 2rem;
-	color: white;
-}
-.herogrid {
-	max-width: 1024px;
-	margin: 0 auto;
-	display: grid;
-	grid-gap: 1rem;
+	gap: 2rem 2rem;
 	align-items: center;
-	grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
-
-Contact
-.contact {
-	padding: 13.2vmax 2rem;
-}
-.contactgrid {
+.projectbtngrid {
+	justify-content: center;
 	max-width: 1024px;
+	padding: 2.4rem 0;
 	margin: 0 auto;
-	grid-gap: 1rem;
 	display: flex;
-	flex-wrap: wrap;
+	grid-gap: 1rem;
 }
-.map{
-	flex-grow: 2;
-}
-a.link {
-	text-decoration: none;
-	color: #003040;
-	font-weight: semibold;
-}
-a.link:hover {
-	color: #003040;
-	text-decoration: none;
-	border-bottom: 2px solid #003040;
-}*/
 
 /* Footer */
 .footer {

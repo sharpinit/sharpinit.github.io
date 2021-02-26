@@ -4,6 +4,7 @@
 /*Color palette 
 #FAFAFA		Background
 #0073AE		Sharp Blue
+#295266		Dark Blue
 #666666		Foreground Gray
 #555555		Footer Background Gray
 #CCCCCC		Footer Foreground
@@ -147,9 +148,9 @@ a.selected {
 
 /*Welcome*/
 .hello {
-	background: #FAFAFA url(../img/Texture.png);
-	box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
-	padding: 0 2rem 8vmax 2rem;
+	background: #295266 url("../img/Texture5.png");
+	padding:8vmax 2rem;
+	box-shadow: 0 5px 10px 0px rgba(0,0,0,0.35);
 }
 .hellogrid {
 	max-width: 1024px;
@@ -159,7 +160,9 @@ a.selected {
 	align-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
+.white{
+	color: #fff;
+}
 .welcomeimage {
 	width: 100%;
 	border-radius: 50%;

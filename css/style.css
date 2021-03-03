@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-
-/*Color palette 
+/*
 #FAFAFA		Background
 #0073AE		Sharp Blue
 #295266		Dark Blue
@@ -9,9 +8,21 @@
 #555555		Footer Background Gray
 #CCCCCC		Footer Foreground
 */
-
 @import url('animate.css');
-
+:root{
+    var-Primary:#0073AE;
+    --primary: #0073AE;
+	var-Background:#FAFAFA;
+	--background:#FAFAFA;
+	var-Secondary:#295266;
+	--secondary:#295266;
+	var-Foreground:#666666;
+	--foreground:#666666;
+	var-FootForeground:#CCCCCC;
+	--foot-foreground:#CCCCCC;
+	var-FootBackground:#555555;
+	--foot-background:#555555;
+}
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -31,8 +42,11 @@ body{
 	height: 100%;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
-	color: #666666;
-	background-color:#FAFAFA;
+	color: var(Foreground);
+    color: var(--foreground);
+	background-color: var(Background);
+    background-color: var(--background); 
+	
 }
 ul, li {
 	list-style: none;
@@ -66,7 +80,8 @@ h3{
 
 hr{
 	max-width: 1024px;
-	border:1px solid #cccccc;
+	border:1px solid var(--foot-foreground);
+	border:1px solid var(FootForeground);
 }
 .endalign{
 	justify-self:end;
@@ -77,15 +92,18 @@ hr{
 	text-align: center;
 }
 a{
-	color: #0073AE; 
+	color: var(Primary);
+    color: var(--primary); 
 	text-decoration: none;
 }
 a:hover{
-	color: #0073AE; 
+	color: var(Primary);
+    color: var(--primary);  
 	text-decoration: underline;
 }
 a.selected {
-	color: #0073AE;
+	color: var(Primary);
+    color: var(--primary); 
 	text-decoration: underline;
 	font-weight: semibold;
 }
@@ -148,7 +166,8 @@ a.selected {
 
 /*Welcome*/
 .hello {
-	background: #295266 url("../img/Texture5.png");
+	background: var(Secondary) url("../img/Texture5.png");
+    background: var(--secondary) url("../img/Texture5.png");
 	padding:8vmax 2rem;
 	box-shadow: 0 5px 10px 0px rgba(0,0,0,0.35);
 }
@@ -247,9 +266,11 @@ a.selected {
 
 /* Footer */
 .footer {
-	background: #555555;
+	background: var(FootBackground);
+    background: var(--foot-background);
 	padding: 2.5rem;
-	color: #cccccc;
+	color: var(FootForeground);
+    color: var(--foot-foreground);
 }
 .footergrid {
 	max-width: 1024px;
@@ -272,11 +293,14 @@ a.selected {
 }
 a.foot {
 	text-decoration: none;
-	color: #cccccc;
+	color: var(FootForeground);
+    color: var(--foot-foreground);
 }
 a.foot:hover {
-	color: #cccccc;
+	color: var(FootForeground);
+    color: var(--foot-foreground);
 	text-decoration: none;
-	border-bottom: 2px solid #cccccc;
+	border-bottom: 2px solid var(FootForeground);
+	border-bottom: 2px solid var(--foot-foreground);
 }
 

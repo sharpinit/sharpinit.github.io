@@ -211,7 +211,7 @@ a.selected {
 	font-weight: normal;
 	font-style: normal;
 	background: #00517A;
-	box-shadow: 2px -2px 0 2px #0073AE;
+	box-shadow: -2px -2px 0 2px #0073AE;
 	padding: 1.1rem 1rem .9rem 1rem;
 }
 .logo {

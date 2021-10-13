@@ -147,8 +147,11 @@ a.selected {
 }
 .image-shadow {
 	width: 100%;
-	box-shadow: 0 0 5px 0 rgba(0,0,0,0.38);	
-	border-radius: 3px;
+	box-shadow: 2px 2px 0 2px #00517A;
+}
+.image-shadow:hover {
+	width: 100%;
+	box-shadow: -2px -2px 0 2px #0073AE;
 }
 .imagenoborder {
 	width:100%;
@@ -190,7 +193,7 @@ a.selected {
 	font-weight: normal;
 	font-style: normal;
 	background: #00517A;
-	box-shadow: 2px -2px 0 2px #0073AE;
+	box-shadow: -2px -2px 0 2px #0073AE;
 	padding: 1.1rem 1rem .9rem 1rem;
 }
 .bodybtn{ 
@@ -253,7 +256,8 @@ a.selected {
 .welcomeimage {
 	width: 100%;
 	border-radius: 50%;
-	box-shadow: 0 0 5px 0 rgba(0,0,0,0.38);	
+	box-shadow: 2px 2px 0 2px var(Secondary);
+	box-shadow: 2px 2px 0 2px var(--secondary);
 }
 
 /* Work */

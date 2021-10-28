@@ -130,13 +130,13 @@ hr{
 	text-align: center;
 }
 a{
-	color: var(Background);
-    color: var(--background); 
+	color: var(Primary);
+    color: var(--primary); 
 	text-decoration: none;
 }
 a:hover{
-	color: var(Background);
-    color: var(--background);  
+	color: var(Primary);
+    color: var(--primary);  
 	text-decoration: underline;
 }
 a.selected {
@@ -186,6 +186,8 @@ a.selected {
 	background: #0073AE;
 	box-shadow: 2px 2px 0 2px #00517A;
 	padding: 1.0rem;
+	color: var(Background);
+    color: var(--background); 
 }
 .navbtn:hover{ 
 	margin: 0 4rem 0 0;
@@ -195,6 +197,8 @@ a.selected {
 	background: #00517A;
 	box-shadow: -2px -2px 0 2px #0073AE;
 	padding: 1.1rem 1rem .9rem 1rem;
+	color: var(Background);
+    color: var(--background); 
 }
 .bodybtn{ 
 	margin: 0;
@@ -204,6 +208,8 @@ a.selected {
 	background: #0073AE;
 	box-shadow: 2px 2px 0 2px #00517A;
 	padding: 1.0rem;
+	color: var(Background);
+    color: var(--background); 
 }
 .bodybtn:hover{ 
 	margin: 0;
@@ -213,6 +219,8 @@ a.selected {
 	background: #00517A;
 	box-shadow: -2px -2px 0 2px #0073AE;
 	padding: 1.1rem 1rem .9rem 1rem;
+	color: var(Background);
+    color: var(--background); 
 }
 .logo {
 	max-width: 100%;

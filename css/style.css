@@ -157,7 +157,7 @@ a.selected {
 /* Header */
 .header {
 	background-size: cover;
-	padding: 0vmax 2rem;
+	padding: 0vmax .8rem;
 }
 .headergrid {
 	max-width: 1024px;
@@ -176,7 +176,7 @@ a.selected {
 	margin-block: .5rem;
 }
 .navbtn{ 
-	margin: 0 4rem 0 0;
+	margin: 0 0 0 1.6rem;
 	display: block;
 	font-size: 2.4rem;
 	font-weight: normal;

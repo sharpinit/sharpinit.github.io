@@ -228,8 +228,8 @@ a.link:hover{
 	max-width: 800px !important;
 	margin: auto;
 }
-.height100{
-	height: 100%;
+.height80{
+	min-height: 80%;
 }
 /* Image */
 .image-shadow {

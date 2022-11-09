@@ -68,7 +68,6 @@ q{
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: "Lato", Helvetica, Arial, "Myriad Pro", "sans-serif";
-	font-weight: inherit;
 	margin-block: .5rem;
 	font-weight: 300;
 }
@@ -124,6 +123,8 @@ a.filled{
 	background-color: var(purple);
     background-color: var(--purple);
 	padding: .8rem 1.6rem;
+	margin: .4rem;
+	display: inline-flex;
 	text-decoration: none;
 	border-radius: .4rem;
 	font-style: italic;
@@ -142,6 +143,8 @@ a.filledlg{
 	background-color: var(purple);
     background-color: var(--purple);
 	padding: 1.6rem 1.6rem;
+	margin: .4rem;
+	display: inline-flex;
 	text-decoration: none;
 	border-radius: .4rem;
 	font-style: italic;
@@ -161,8 +164,9 @@ a.outline{
 	border: 1px solid;
 	border-color: var(dkpurple);
 	border-color: var(--dkpurple); 
-	border-radius: 4px;
 	padding: 1.6rem 1.6rem;
+	margin: .4rem;
+	display: inline-flex;
 	text-decoration: none;
 	border-radius: .4rem;
 	font-style: italic;
@@ -181,8 +185,9 @@ a.outlinewt{
 	border: 1px solid;
 	border-color: var(bgwhite);
 	border-color: var(--bgwhite); 
-	border-radius: 4px;
 	padding: 1.6rem 1.6rem;
+	margin: .4rem;
+	display: inline-flex;
 	text-decoration: none;
 	border-radius: .4rem;
 	font-style: italic;
@@ -324,7 +329,7 @@ a.link:hover{
 	display: grid;
 	gap: 2rem 2rem;
 	align-items: baseline;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 .normal {
 	padding:7vmax 2rem;

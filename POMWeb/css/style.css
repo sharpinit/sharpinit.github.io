@@ -85,6 +85,10 @@ ul, li{
 }
 
 /* Type */
+.hint{
+	margin: 0px;
+    font-style: italic;
+}
 .xl{
 	font-size:  7.2rem;
 	color: var(header);

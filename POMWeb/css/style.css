@@ -121,19 +121,17 @@ a.selected {
 	text-decoration: underline;
 	font-weight: semibold;
 }
-a.filled{
+a.navfilled{
 	color: var(bgwhite);
     color: var(--bgwhite);
-	background-color: var(purple);
+    background-color: var(purple);
     background-color: var(--purple);
-	padding: .8rem 1.6rem;
-	margin: .4rem;
-	display: inline-flex;
-	text-decoration: none;
-	border-radius: .4rem;
-	font-style: italic;
+    padding: 0.8rem 1.6rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    font-style: italic;
 }
-a.filled:hover{
+a.navfilled:hover{
 	color: var(bgwhite);
     color: var(--bgwhite);
 	background-color: var(dkpurple);
@@ -141,7 +139,7 @@ a.filled:hover{
 	text-decoration: underline;
 	font-style: italic;
 }
-a.filledlg{
+a.filled{
 	color: var(bgwhite);
     color: var(--bgwhite);
 	background-color: var(purple);
@@ -153,7 +151,7 @@ a.filledlg{
 	border-radius: .4rem;
 	font-style: italic;
 }
-a.filledlg:hover{
+a.filled:hover{
 	color: var(bgwhite);
     color: var(--bgwhite);
 	background-color: var(dkpurple);
@@ -229,9 +227,13 @@ a.link:hover{
 	max-width: 1024px;
 	margin: auto;
 }
-.mini{
-	max-width: 548px !important;
+.kexptitle{
+	max-width: 56.2rem !important;
 	margin: auto;
+}
+.kexp{
+    max-width: 54.2rem;
+    margin: auto;
 }
 .eight{
 	max-width: 800px !important;
@@ -252,6 +254,7 @@ a.link:hover{
 	object-fit: cover;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	border-radius: 100%;
+	margin-bottom: 1.6rem;
 }
 .image-contact{
 	width: 100%;
@@ -530,6 +533,6 @@ a.foot:hover {
 }
   nav li {
 	display: inline-block;
-	padding: 2.6rem 1.6rem;
+	padding: 2.4rem 1.6rem;
 }
 }

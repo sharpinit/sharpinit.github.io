@@ -10,17 +10,11 @@
 */
 /*Colors*/
 :root{
-    var-Primary:#0073AE;
     --primary: #0073AE;
-	var-Background:#FAFAFA;
 	--background:#FAFAFA;
-	var-Secondary:#295266;
 	--secondary:#295266;
-	var-Foreground:#666666;
 	--foreground:#666666;
-	var-FootForeground:#CCCCCC;
 	--foot-foreground:#CCCCCC;
-	var-FootBackground:#555555;
 	--foot-background:#555555;
 }
 
@@ -99,8 +93,6 @@ p{
 	font-style: normal;
 	line-height: 150%;
 	letter-spacing: .25px;
-}
-h1, h2, h3, h4, h5, h6{
 }
 .title-lg{
 	font-size:  4.2rem;

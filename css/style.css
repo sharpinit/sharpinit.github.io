@@ -11,6 +11,7 @@
 /*Colors*/
 :root{
     --primary: #0073AE;
+	--p_hover: hsl(200, 100%, 25%);
 	--background:#FAFAFA;
 	--secondary:#295266;
 	--foreground:#666666;
@@ -133,11 +134,10 @@ hr{
 a{
 	color: var(Primary);
     color: var(--primary); 
-	text-decoration: none;
+	text-decoration: underline;
 }
 a:hover{
-	color: var(Primary);
-    color: var(--primary);  
+    color: var(--p_hover);  
 	text-decoration: underline;
 }
 a.selected {

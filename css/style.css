@@ -322,24 +322,20 @@ a.selected {
 .footerbtns{ 
 	font-size: 1.8rem;
 	display: block;
-	font-weight: lighter;
 	margin: 0px;
 }
 .copyright{ 
 	font-size: 1.8rem;
 	display: block;
-	font-weight: lighter;
 }
 a.foot {
-	text-decoration: none;
+	text-decoration: underline;
 	color: var(FootForeground);
     color: var(--foot-foreground);
 }
 a.foot:hover {
-	color: var(FootForeground);
-    color: var(--foot-foreground);
-	text-decoration: none;
-	border-bottom: 2px solid var(FootForeground);
-	border-bottom: 2px solid var(--foot-foreground);
+	color: var(backround);
+    color: var(--background);
+	text-decoration: underline;
 }
 

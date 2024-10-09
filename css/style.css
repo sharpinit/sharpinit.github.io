@@ -36,10 +36,8 @@ body{
 	font-size: 2.4rem;
 	height: 100%;
 	margin: 0;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	color: var(Foreground);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     color: var(--foreground);
-	background-color: var(Background);
     background-color: var(--background);
 }
 ul, li {
@@ -76,7 +74,6 @@ p{
 hr{
 	max-width: 1024px;
 	border:1px solid var(--foot-foreground);
-	border:1px solid var(FootForeground);
 }
 .tb32{
 	padding-top: 3.2rem;
@@ -95,7 +92,6 @@ hr{
 	text-align: center;
 }
 a{
-	color: var(Primary);
     color: var(--primary); 
 	text-decoration: underline;
 }
@@ -104,7 +100,6 @@ a:hover{
 	text-decoration: underline;
 }
 a.selected {
-	color: var(Primary);
     color: var(--primary); 
 	text-decoration: underline;
 	font-weight: semibold;
@@ -168,7 +163,6 @@ a.selected {
 
 /*Welcome*/
 .hello {
-	background: var(Secondary) url("../img/Texture5.png");
     background: var(--secondary) url("../img/Texture5.png");
 	padding:8vmax 2rem;
 	box-shadow: 0 5px 10px 0px rgba(0,0,0,0.35);
@@ -268,10 +262,8 @@ a.selected {
 
 /* Footer */
 .footer {
-	background: var(FootBackground);
     background: var(--foot-background);
 	padding: 2.5rem;
-	color: var(FootForeground);
     color: var(--foot-foreground);
 }
 .footergrid {
@@ -293,11 +285,9 @@ a.selected {
 }
 a.foot {
 	text-decoration: underline;
-	color: var(FootForeground);
     color: var(--foot-foreground);
 }
 a.foot:hover {
-	color: var(backround);
     color: var(--background);
 	text-decoration: underline;
 }

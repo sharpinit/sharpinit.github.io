@@ -335,16 +335,15 @@ header {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
     gap: var(--space-md);
     align-items: start;
     text-align: left;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .about-image img {
     border-radius: 4px;
     width: 100%;
-    max-width: 300px;
 }
 
 .skills-list {

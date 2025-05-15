@@ -223,7 +223,8 @@ header {
 
 /* Hero section */
 .hero {
-    background-color: var(--color-background-alt);
+    /* background-color: var(--color-background-alt); */
+    background: var(--color-background-alt) url("../img/Texture.png");
     padding: var(--space-lg) 0;
 }
 

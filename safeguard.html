@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio site dedicated to Shawn Sharp's work."/>
+    <meta name="keywords" content="interaction design, visual design, graphic design, ux design, product design"/>
+    <meta name="copyright" content="Copyright Shawn Sharp 2025"/>
+    <meta name="author" content="Shawn Sharp"/>
+    <meta name="email" content="contact@sharpinit.com"/>
+    <title>Dell Safeguard by Shawn Sharp</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/Sharp.png" alt="Shawn Sharp Logo">
+                    </a>
+                </div>
+
+                <nav>
+                    <button aria-expanded="false" aria-controls="nav-menu" class="menu-toggle">Menu</button>
+                    <ul id="nav-menu" class="nav-menu">
+                        <li><a href="index.html#work">Work</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="case-studies-intro">
+            <div class="container">
+                <h1>Dell Safeguard - Making Security Less Scary</h1>
+                <p>A detailed look at my design process and results</p>
+                <div class="case-study-meta">
+                    <div class="meta-item">
+                        <h3>Role</h3>
+                        <p>UX Designer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h3>Timeline</h3>
+                        <p>4 years</p>
+                    </div>
+                    <div class="meta-item">
+                        <h3>Tools</h3>
+                        <p>Visual Studio, Photoshop, In-Person Interviews</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article id="project1" class="case-study">
+            <div class="container">
+
+                <section class="case-study-overview">
+                    <h3>Overview</h3>
+                    <p>Dell Safeguard, or just Safeguard, is like a super-smart digital vault that keeps passwords, sessions, and files locked down tight, but also easy to manage and see what's going on. Our big goal was to take three older, clunky things and mash them into one smooth, "finally makes sense" product.</p>
+                </section>
+
+                <div class="case-study-image">
+                    <img src="img/SGA3.png" alt="Dell Safeguard interface screenshot showing user activity logs, associated items visualized in a Venn diagram, system activity details, and activity trend charts.">
+                </div>
+
+                <div class="case-study-content">
+                    <section class="case-study-section">
+                        <h3>The Challenge</h3>
+                        <p>We wanted to build something powerful but didn't require a computer science degree to use. Think "security for smart humans," not just IT wizards. Plus, it had to work great on phones and tablets, and we even had to figure out some basic rules for how Dell's desktop apps should look (who knew that wasn't a thing yet?).</p>
+
+                        <h3>Process</h3>
+
+                        <h4>Research</h4>
+                        <p>I was the main UX brain for Safeguard, teamed up with one awesome person on the UX architecture side. Being a small but mighty team meant I got to play with everything – how it worked, how it looked, even some of the pretty pictures. To figure out what to build, we dug into the old stuff. Who used it? Who really used it? We found three main groups: regular folks, the admins in charge, and the auditors checking everything. Knowing these three helped us make sure the stuff regular folks used was super easy to find – they were our biggest crowd.</p>
+
+                        <div class="case-study-image">
+                            <img src="img/SGPermissionRedo.png" alt="Dell Safeguard Role settings window showing custom permissions for appliance, automation, cluster, users, groups, assets, accounts, collections, and roles.">
+                        </div>
+
+                        <h4>Design Solutions</h4>
+                        <p><strong>Hardware Manual Oops:</strong> The instructions for the actual hardware were this tiny pamphlet lost in the box. People just tossed it, leading to lots of "huh?". We flipped the script and made this cool 'poster' instead. Turns out, even IT pros stopped and looked at something that wasn't a boring manual. Who knew!</p>
+                        <div class="case-study-image">
+                            <img src="img/SafeguardBox.png" alt="Dell Safeguard Quick Start Guide being placed into a product box.">
+                        </div>
+                        <div class="case-study-image">
+                            <img src="img/SafeguardPoster_1.png" alt="Dell Safeguard Quick Start Guide with setup steps and support info.">
+                        </div>
+                        <div class="case-study-image">
+                            <img src="img/SafeguardPoster_2.png" alt="Dell One Identity Safeguard 3000 Appliance guide's back side showing package contents.">
+                        </div>
+                        <p><strong>Desktop Power-Up (Simplified):</strong> The desktop app was like the control center, letting admins do all sorts of powerful stuff, from managing computers and passwords to who gets to play with those passwords. Instead of showing every single click, here's a peek at how we made some of the brain-bending parts (like permissions, system health, and activity logs) actually make sense in the final product.</p>
+                        <p><strong>Mobile-First Magic (Web Experience):</strong> We knew the web part needed to play nice with phones first, then scale up for bigger screens. So, no matter what gadget you were using, the info would always be easy to see and use. Here’s a glimpse of what someone who approves things would see – clean and simple, no matter the screen size.</p>
+
+                        <div class="case-study-image">
+                            <img src="img/SGCluster.gif" alt="Dell Safeguard cluster interface showing four appliances with health statuses, replication details for a primary appliance, disk space, CPU, and memory usage.">
+                        </div>
+
+                        <h4>Usability Testing</h4>
+                        <p>WWe didn't just guess this stuff would work – we hit the road! We took Dell Safeguard to real customers, from schools like Alpine School District to the workwear folks at Carhartt. We watched them install it, like hawks, noting every "huh?" moment in the guide and on the screen. Since this thing was pretty deep in their systems, we even let their IT gurus take it for a spin for a few days, basically saying, "Go break it, tell us what's clunky."</p>
+                        <p>But we didn't just talk to the techy folks. We also grabbed regular people off the street (okay, maybe not literally, but you get the idea) to try out the features. We wanted to make darn sure it was something anyone could use without their brain melting. Lastly, we zoomed over to our support and solutions crew in London for a crash course. They used it like crazy and gave us the lowdown on what confused them and what could be better. All this helped us make sure Safeguard wasn't just secure, but actually usable by everyone.</p>
+                    </section>
+
+                    <section class="case-study-section">
+                        <h3>Did it Work?</h3>
+                        <p>By making things easier to understand from the get-go (that poster!), and by simplifying even the complex admin tools for desktop and making the web stuff work on any device, we aimed to create a security product that was actually… usable.</p>
+                        <div class="case-study-image">
+                            <img src="img/SGWebLarge-1.png" alt="Dell Safeguard login screen with fields for username and password.">
+                        </div>
+
+                        <h4>Key Learnings</h4>
+                        <ul>
+                            <li>A little thought on something as basic as a hardware guide can make a huge difference in the initial user experience.</li>
+                            <li>In today's world, your web stuff has to work well on any screen size – no excuses.</li>
+                            <li>Understanding the different types of users (end-user, admin, auditor) helps you prioritize and design the right experiences for each.</li>
+                        </ul>
+                    </section>
+
+                    <!-- <section class="case-study-section">
+                        <h3>Results</h3>
+                        <div class="results-metrics">
+                            <div class="metric">
+                                <span class="metric-number">43%</span>
+                                <span class="metric-label">Increase in mobile transactions</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">28%</span>
+                                <span class="metric-label">Reduction in support tickets</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">92%</span>
+                                <span class="metric-label">Task completion rate (up from 63%)</span>
+                            </div>
+                        </div>
+
+                        <h4>Key Learnings</h4>
+                        <p>This project reinforced the importance of validating designs through usability testing with real users. The biggest impact came from simplifying the transaction flow, which directly addressed the primary pain point.</p>
+                    </section> -->
+                </div>
+
+                <div class="case-study-navigation">
+                    <div class="nav-links">
+                        <a href="airstack-meetings.html" class="nav-link">
+                            <span>Previous Case Study:</span>
+                            <span>Airstack Meetings</span>
+                        </a>
+                        <!-- <a href="safeguard.html" class="nav-link next">
+                            <span>Next Case Study:</span>
+                            <span>Safeguard</span>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> Shawn Sharp. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sharpinit/" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript to update year and handle mobile menu
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', function() {
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !expanded);
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

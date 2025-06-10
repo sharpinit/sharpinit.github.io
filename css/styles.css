@@ -272,6 +272,7 @@ header {
     box-shadow: var(--shadow);
     transition: var(--transition);
     height: 100%;
+    padding: var(--space-xs);
 }
 
 .project-card:hover, .project-card:focus-within {
@@ -396,6 +397,12 @@ footer .container {
 footer a {
     color: white;
     margin-left: var(--space-sm);
+}
+
+footer a:hover, footer a:focus {
+    color: white;
+    text-decoration: none;
+    border-radius: var(--border-radius);
 }
 
 /* Case studies page */

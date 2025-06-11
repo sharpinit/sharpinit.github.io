@@ -497,6 +497,21 @@ footer a:hover, footer a:focus {
     color: var(--color-text-light);
 }
 
+/* password */
+.password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.password-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+.hidden { display: none; }
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {    
     .menu-toggle {

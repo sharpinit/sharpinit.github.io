@@ -8,7 +8,7 @@
     <meta name="copyright" content="Copyright Shawn Sharp 2025"/>
     <meta name="author" content="Shawn Sharp"/>
     <meta name="email" content="shawn@sharpinit.com"/>
-    <title>Can You See My Screen? by Shawn Sharp</title>
+    <title>iOS Accessibility Testing by Shawn Sharp</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -35,12 +35,23 @@
         </div>
     </header>
 
-    <main id="main-content">
+    <!-- Password Form -->
+    <div id="password-container" class="password-container">
+        <div class="password-form">
+            <h1>Confidential Case Study</h1>
+            <p>This project contains sensitive client information.</p>
+            <p id="error" style="color: red; display: none;">Your password is incorrect. Check my application or email signature.</p>
+            <input type="password" id="password" placeholder="Enter password">
+            <button onclick="checkPassword()">View Project</button>
+        </div>
+    </div>
+
+    <main id="main-content" class="hidden">
         <article id="project1" class="case-study">
             <section class="case-studies-intro">
                 <div class="container">
-                    <h1>The "Can You See My Screen?" Conundrum</h1>
-                    <p>Improved the usability of screensharing apps with one simple imrpovement.</p>
+                    <h1>Filtering is Easy?</h1>
+                    <p>Breaking down filtering at the component level with accessibility and our needs in mind.</p>
                     <div class="case-study-meta">
                         <div class="meta-item">
                             <strong>Role</strong>
@@ -49,9 +60,10 @@
                         <div class="meta-item">
                             <strong>Tools</strong>
                             <ul>
-                                <li>Sketch</li>
-                                <li>UserTesting</li>
-                                <li>Contextual Inquiries</li>
+                                <li>Figma</li>
+                                <li>FigJam</li>
+                                <li>User Interviews</li>
+                                <li>Usability Testing</li>
                             </ul>
                         </div>
                     </div>
@@ -61,53 +73,50 @@
             <div class="container">
                 <section class="case-study-overview">
                     <h2>Overview</h2>
-                    <p>This project addressed a common frustration during online meetings: the uncertainty around screen visibility for presenters.</p>
+                    <p>Fill This Out</p>
                 </section>
 
                 <div class="case-study-content">
                     <section class="case-study-section">
                         <h3>The Problem</h3>
-                        <p> As our product's user base grew, research revealed a recurring issue. Presenters frequently had to ask the age-old question, "Can you see my screen?" This highlighted a lack of clear feedback, a trend prevalent across many online meeting platforms.</p>
+                        <p>Fill This Out</p>
                         <h3>Process</h3>
                         
                         <h4>Research</h4>
-                        <p>To understand the nuances of this problem, I conducted contextual inquiries with both our users and those of competitors. The goal was to identify habits and frustrations related to online meetings. The repeated question about screen visibility consistently surfaced as a key pain point.</p>
+                        <p>Fill This Out</p>
                         
                         <div class="case-study-image">
-                            <img src="img/MeetingCompetitor.png" alt="Side by side comparison of various meeting tools during our contexual inquiry sessions with users.">
+                            <img src="img/.png" alt="Fill This Out">
                         </div>
                         
                         <h4>Design Solutions</h4>
-                        <p> Working hand-in-hand with product management and our dev lead, we brainstormed a ton of ideas. We dreamt big, like giving presenters troubleshooting steps on the fly, or even showing exactly who was (or wasn't) seeing the screen, and guiding users on how to fix common hiccups like dodgy networks or user errors.</p>
-                        <p>But when we started digging into what was actually possible, we decided to get smart and simple. We leaned into a straightforward approach: just tell the presenter if <strong>at least one person can view their screen.</strong> That felt like the right starting point, allowing us to learn more from that initial step before diving into more complex solutions for those tricky "can't see it" issues.</p>
+                        <p> Fill This Out</p>
                         <div class="case-study-image">
-                            <img src="img/Sharing.png" alt="A thumbs up icon with the text They can see your screen now and a Stop Sharing button.">
+                            <img src="img/.png" alt="Fill This Out">
                         </div>
                     </section>
 
                     <section class="case-study-section">
                         <h3>Did it Work?</h3>
-                        <p>Through experimentation and validation, we ensured the feasibility and user impact of our solution. The implementation of clear visual confirmation aimed to reduce presenter uncertainty and contribute to smoother, more confident presentations.</p>
-                        <p>The best part? At first, we'd still hear a relieved, "Oh, I guess you can see my screen." But pretty quickly, that awkward question just... disappeared. Mission accomplished!</p>
+                        <p>Fill This Out</p>
+                        <p>Fill This Out</p>
                         <h4>Key Learnings</h4>
                         <ul>
-                            <li>Sometimes the most "obvious" problems are hiding in plain sight (or sound!).</li>
-                            <li>Meaningful improvements don't always require complex overhauls. A targeted solution can effectively address a major user pain point.</li>
-                            <li>Teamwork makes the dream work (especially for less awkward meetings).</li>
+                            <li>Fill This Out</li>
                         </ul>
                     </section>
                 </div>
 
                 <div class="case-study-navigation">
                     <div class="nav-links">
-                        <a href="filtering-issues.html" class="nav-link">
+                        <a href="ios-testing-made-easy.html" class="nav-link">
                             <span>Previous Case Study:</span>
-                            <span>Filtering is Easy?</span>
+                            <span>iOS Accessibility Testing</span>
                         </a>
-                        <!-- <a href="this.html" class="nav-link next">
+                        <a href="see-my-screen.html" class="nav-link next">
                             <span>Next Case Study:</span>
-                            <span>this</span>
-                        </a> -->
+                            <span>"Can you see my screen?"</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -134,6 +143,24 @@
             const expanded = this.getAttribute('aria-expanded') === 'true';
             this.setAttribute('aria-expanded', !expanded);
             navMenu.classList.toggle('active');
+        });
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            const correctPassword = 'Test'; // Change this
+            
+            if (password === correctPassword) {
+                document.getElementById('password-container').style.display = 'none';
+                document.getElementById('main-content').classList.remove('hidden');
+            } else {
+                document.getElementById('error').style.display = 'block';
+            }
+        }
+        
+        // Allow Enter key to submit
+        document.getElementById('password').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
         });
     </script>
 </body>

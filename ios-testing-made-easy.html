@@ -68,7 +68,8 @@
                                 <li>Figma</li>
                                 <li>FigJam</li>
                                 <li>User Interviews</li>
-                                <li>Usability Testing</li>
+                                <li>Moderated Usability Testing</li>
+                                <li>Custom Claude Project</li>
                             </ul>
                         </div>
                     </div>
@@ -78,36 +79,48 @@
             <div class="container">
                 <section class="case-study-overview">
                     <h2>Overview</h2>
-                    <p>Fill This Out</p>
+                    <p>We took on the beast that is iOS accessibility testing. Our mission? To build a super simple, desktop-based solution that cuts out the headache for everyone, especially those not fluent in Xcode.</p>
                 </section>
 
                 <div class="case-study-content">
                     <section class="case-study-section">
                         <h3>The Problem</h3>
-                        <p>Fill This Out</p>
+                        <p> iOS accessibility testing was a royal pain. It wasn't just hard; the task was shifting to non-developers, complicating things further. The setup was a beast – SDK-driven, needing both front-end and back-end savvy, plus a solid grasp of Xcode. Add Apple's super-secure model (great for users, tricky for us!), and we had a recipe for major frustration. This friction was clearly a huge barrier to effective accessibility testing.</p>
                         <h3>Process</h3>
                         
                         <h4>Research</h4>
-                        <p>Fill This Out</p>
-                        
+                        <p>We knew we couldn't just guess our way through this. So, with the mobile PM and PO, we kicked off a deep dive using a Certainties, Suppositions, and Doubts (CSD) Matrix. This helped us lay out what we knew, what we thought we knew, and all the spooky unknowns and risks. Crucial for steering clear of biases!</p>
+                        <p>We also put on our spy hats and looked at our competitors, because Apple's secure infrastructure is everyone's problem, not just ours! We saw a mix: some tried remote testing, others endured rigorous install processes just like ours, and some just threw their hands up and avoided iOS testing altogether. Crucially, we also tapped into our own internal knowledge bank, leveraging insights from the Android testing application we'd released about a year prior. This gave us a head start on understanding common user behaviors and expectations across mobile platforms.</p>
+
+                        <p>Next, we walked through the user's workflow step-by-step, highlighting risks and opportunities. We kept asking: If Xcode setup is a nightmare, how can we make this easier? What makes a desktop app "easier" than just going through the SDK install? This helped us pinpoint exactly where our solution needed to shine.</p>
+                                                
                         <div class="case-study-image">
                             <img src="img/.png" alt="Fill This Out">
                         </div>
                         
                         <h4>Design Solutions</h4>
-                        <p> Fill This Out</p>
+                        <p>Time was a huge factor, and costly virtual machines for every user weren't going to fly. Since most folks had physical devices handy, we needed a clever way to test those directly. The lightbulb moment? A dedicated Electron Desktop Application. This became our golden ticket to working easier on Mac, playing nice with Apple's secure model, and getting users testing without a massive setup headache</p>
+                        <p>Our core design philosophy was simple: get users in as fast as humanly possible, with zero fuss. The desktop app effectively gobbled up those complicated SDK setup screens, handling all the heavy lifting once installed. Even though Xcode was still part of the equation (Apple, sigh!), we slashed the "code" down to a single line, making it much less daunting. With the desktop app now working hand-in-glove with Apple's system, those previous barriers felt a lot smaller.</p>
+                        <p>We kicked off the design process with wireframes, meticulously mapping out the absolute minimum functions for each step. If a user just wanted to test one screen, what did they really need? Name? Tags? Should we remember their last device choice? These questions led us to a delightfully simple, airy design. We then layered on our accessible, in-house React design components, making sure it looked and felt like part of the Deque family. Oh, and to make sure the words felt consistent and on-brand too, we actually utilized a custom-built Claude project. This project was fed specific guidelines for accessibility, readability, and our brand voice, ensuring every piece of copy was clear, simple, and jargon-free across the entire product. Knowing the app would live in a small digital space, we made sure to embrace whitespace, inviting users in rather than overwhelming them.</p>
+                        <p>Throughout this fast-paced quarter, I worked closely with the lead developer and our technically-savvy PO to ensure we could actually hit our ambitious launch goal. We made smart calls: for instance, we avoided complex virtual environments beyond what Xcode already provided. We also decided to initially skip in-app tags (they could be applied on the dashboard later, and our Android app research hinted this was a smart "fast-follow" move). Crucially, I teamed up directly with the lead dev to understand every possible error a user might face. This was a vital time-saver, preventing us from wasting precious dev resources on solutions for assumed errors that simply weren't going to happen.</p>
                         <div class="case-study-image">
                             <img src="img/.png" alt="Fill This Out">
                         </div>
+                        <h4>Testing</h4>
+                        <p>We didn't just design in a vacuum, oh no! We put our designs (and our theories) to the test right away. We ran moderated remote sessions with folks completely new to Apple's Xcode and with little accessibility testing experience – basically, our ideal "novice" users. We also got some early concept feedback from our initial customers, which was invaluable for shaping our direction.</p>
+                        <p>The testing quickly highlighted a couple of head-scratchers. Users were a bit lost trying to find our Help link, and the Tagging feature was causing some real confusion. Specifically, users were scratching their heads, unsure when a tag was actually applied. This feedback was gold. For instance, our initial tag design implicitly added tags (a pattern we'd seen in other mobile products), but testing confirmed it was anything but clear for our users. The fix was delightfully simple: we just added an "Add" button right after the text field. Boom! Usability and understanding shot way up. This kind of direct feedback helped us iron out the wrinkles, making sure the product felt intuitive for real people.</p>
                     </section>
 
                     <section class="case-study-section">
                         <h3>Did it Work?</h3>
-                        <p>Fill This Out</p>
-                        <p>Fill This Out</p>
+                        <p>One of our biggest wins was figuring out how to show test results right there in the app. Users really just wanted to know if their screen was "clean" or had issues without jumping through hoops. Before, all they got was a generic "success, we scanned the page." Now, by adding a simple issue count right on the screen, we saved them a trip to the web dashboard and gave them the confidence to either keep scanning more screens (and test a whole flow!) or dive into the full details when ready. It was a small change with a big impact on their workflow.</p>
+                        <p>We also learned that this desktop application could become the go-to hub for all app testing. Once we roll out Android testing here too, users will have an even bigger reason to stay in one convenient spot to test and view all their results. No more app-hopping for peace of mind!</p>
                         <h4>Key Learnings</h4>
                         <ul>
-                            <li>Fill This Out</li>
+                            <li>Simple Always Wins (Even for Complex Stuff): We saw it firsthand: accessibility testing can be intuitive and look good. There's often an assumption that developers want endless control, but time and again, simplified designs prove to be the real crowd-pleasers.</li>
+                            <li>The "Help" Button Paradox: Our testing showed that something as seemingly simple as a "Help" icon's location or duplication could throw users for a loop. As one user aptly put it, "This is interesting. Because there's a need help here and there's also an like, a help button here." It's a great reminder that clarity trumps conventional placement every time.</li>
+                            <li>A "Hub" is a Happy Place: We discovered the power of keeping users in one environment. The desktop app's potential to centralize all testing (iOS and eventually Android) means less friction and a more seamless experience for our users.</li>
+                            <li>User Feedback is a Gift (for Everyone!): The feedback we gathered on existing experiences didn't just improve this product; it helped us clarify design patterns across all Deque products. It's a clear win when insights from one project make the whole product family better for every user. And the learning never stops! We're constantly observing, refining, and eagerly anticipating even more feedback as we fully release to the public.</li>
                         </ul>
                     </section>
                 </div>

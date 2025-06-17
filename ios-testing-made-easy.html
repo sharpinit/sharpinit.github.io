@@ -36,7 +36,7 @@
     </header>
 
     <!-- Password Form -->
-     <!-- <div id="password-container" class="password-container">
+     <div id="password-container" class="password-container">
         <div class="password-form">
             <h1>Confidential Case Study</h1>
             <p>This project contains sensitive client information.</p>
@@ -48,10 +48,9 @@
                 <button onclick="checkPassword()">View Project</button>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <main id="main-content" >
-    <!-- <main id="main-content" class="hidden"> -->
+    <main id="main-content" class="hidden">
         <article id="project1" class="case-study">
             <section class="case-studies-intro">
                 <div class="container">
@@ -197,7 +196,7 @@
         });
         function checkPassword() {
             const password = document.getElementById('password').value;
-            const correctPassword = 'Test'; // Change this
+            const correctPassword = 'SharpProject2025'; // Change this
             
             if (password === correctPassword) {
                 document.getElementById('password-container').style.display = 'none';

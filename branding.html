@@ -10,6 +10,7 @@
     <meta name="email" content="contact@sharpinit.com"/>
     <title>Shawn Sharp || Branding Designer</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -174,19 +175,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Simple JavaScript to update year and handle mobile menu
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-        
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-        
-        menuToggle.addEventListener('click', function() {
-            const expanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !expanded);
-            navMenu.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>

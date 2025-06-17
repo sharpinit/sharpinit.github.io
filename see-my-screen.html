@@ -10,6 +10,7 @@
     <meta name="email" content="shawn@sharpinit.com"/>
     <title>Can You See My Screen? by Shawn Sharp</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -122,19 +123,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Simple JavaScript to update year and handle mobile menu
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-        
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-        
-        menuToggle.addEventListener('click', function() {
-            const expanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !expanded);
-            navMenu.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>

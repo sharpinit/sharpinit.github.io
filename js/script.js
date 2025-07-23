@@ -31,5 +31,5 @@ function checkPassword() {
 // Email obfuscation (only runs on pages that have the email element)
 const emailElement = document.getElementById('email');
 if (emailElement) {
-    emailElement.innerHTML = '<a href="mailto:shawn@sharpinit.com">shawn@sharpinit.com</a>';
+    emailElement.innerHTML = '<a href="mailto:mrsharp@sharpinit.com">mrsharp@sharpinit.com</a>';
 }

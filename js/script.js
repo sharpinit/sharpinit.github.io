@@ -22,3 +22,7 @@ function checkPassword() {
         document.getElementById('error').style.display = 'block';
     }
 }
+
+// Email obfuscation
+document.getElementById('email').innerHTML = 
+    '<a href="mailto:shawn@sharpinit.com">shawn@sharpinit.com</a>';

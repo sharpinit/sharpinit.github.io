@@ -1,9 +1,7 @@
 // Simple JavaScript to update year and handle mobile menu
 document.getElementById('current-year').textContent = new Date().getFullYear();
-
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.getElementById('nav-menu');
-
 menuToggle.addEventListener('click', function() {
     const expanded = this.getAttribute('aria-expanded') === 'true';
     this.setAttribute('aria-expanded', !expanded);
@@ -23,6 +21,8 @@ function checkPassword() {
     }
 }
 
-// Email obfuscation
-document.getElementById('email').innerHTML = 
-    '<a href="mailto:shawn@sharpinit.com">shawn@sharpinit.com</a>';
+// Email obfuscation (only runs on pages that have the email element)
+const emailElement = document.getElementById('email');
+if (emailElement) {
+    emailElement.innerHTML = '<a href="mailto:shawn@sharpinit.com">shawn@sharpinit.com</a>';
+}

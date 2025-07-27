@@ -291,6 +291,7 @@ header {
 .project-card img {
     width: 100%;
     /* aspect-ratio: 3/2; */
+    height: 12REM;
     object-fit: cover;
 }
 .branding img {

@@ -1,14 +1,19 @@
 // Simple JavaScript to update year and handle mobile menu
-document.getElementById('current-year').textContent = new Date().getFullYear();
+const currentYearElement = document.getElementById('current-year');
+if (currentYearElement) {
+    currentYearElement.textContent = new Date().getFullYear();
+}
 
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.getElementById('nav-menu');
 
-menuToggle.addEventListener('click', function() {
-    const expanded = this.getAttribute('aria-expanded') === 'true';
-    this.setAttribute('aria-expanded', !expanded);
-    navMenu.classList.toggle('active');
-});
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        navMenu.classList.toggle('active');
+    });
+}
 
 //Password//
 function checkPassword() {
@@ -21,4 +26,10 @@ function checkPassword() {
     } else {
         document.getElementById('error').style.display = 'block';
     }
+}
+
+// Email obfuscation (only runs on pages that have the email element)
+const emailElement = document.getElementById('email');
+if (emailElement) {
+    emailElement.innerHTML = '<a href="mailto:mrsharp@sharpinit.com">mrsharp@sharpinit.com</a>';
 }

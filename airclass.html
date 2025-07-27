@@ -1,29 +1,42 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Airclass by Shawn Sharp</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="A portfolio site dedicated to Shawn Sharp's work."/>
-        <meta name="keywords" content="interaction design, visual design, graphic design, ux design, Utah"/>
-        <meta name="copyright" content="Copyright Shawn Sharp 2025"/>
-        <meta name="author" content="Shawn Sharp"/>
-        <meta name="email" content="contact@sharpinit.com"/>
-        <link href="css/style.css" rel="stylesheet" media="screen,projection"/>
-    </head>
-
-    <body>
-		
-		<section class="header">
-			<div class="headergrid">
-				<a href="/"><img class="logo" src="img/Sharp.png" alt="Sharpinit"></a>
-				<div class="navbtngrid endalign">
-					<a class="navbtn" href="/#work">Work</a>
-					<a class="navbtn" href="/#about">About</a>
-				</div>
-			</div>
-		</section>
-		<section class="project">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio site dedicated to Shawn Sharp's work."/>
+    <meta name="keywords" content="interaction design, visual design, graphic design, ux design, product design"/>
+    <meta name="copyright" content="Copyright Shawn Sharp 2025"/>
+    <meta name="author" content="Shawn Sharp"/>
+    <title>AirClass by Shawn Sharp</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="img/Sharp.png" alt="Shawn Sharp Logo">
+                    </a>
+                </div>
+                
+                <nav>
+                    <button aria-expanded="false" aria-controls="nav-menu" class="menu-toggle">Menu</button>
+                    <ul id="nav-menu" class="nav-menu">
+                        <li><a href="index.html#work">Work</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+	<main id="main-content">
+		<article id="project1" class="case-study">
+			<section class="container">
 			<div class="projectgrid">
 				<div class="projectimg">
 					<img src="img/airclass.png" class="image-shadow" alt="Image of AirClass Product">
@@ -62,13 +75,14 @@
 				<a class="navbtn" href="healthequity.html">Next: HealthEquity</a>
 			</div>
 		</section>
-		
-		<section class="footer">
-			<div class="footergrid centeralign">
-				<a href="/"><img src="img/SharpFooter.png" class="logo" alt="Sharpinit"></a>
-				<p class="copyright">Copyright &copy; 2025 All Rights Reserved | <a class="foot" href="mailto:shawn@sharpinit.com">shawn@sharpinit.com</a></p>
-			</div>
-		</section>
     </body>
+	<footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> Shawn Sharp. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sharpinit/" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 
 </html>

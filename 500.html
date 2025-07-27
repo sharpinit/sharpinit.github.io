@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio site dedicated to Shawn Sharp's work."/>
+    <meta name="keywords" content="interaction design, visual design, graphic design, ux design, product design"/>
+    <meta name="copyright" content="Copyright Shawn Sharp 2025"/>
+    <meta name="author" content="Shawn Sharp"/>
+    <title>500</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="img/Sharp.png" alt="Shawn Sharp Logo">
+                    </a>
+                </div>
+
+                <nav>
+                    <button aria-expanded="false" aria-controls="nav-menu" class="menu-toggle">Menu</button>
+                    <ul id="nav-menu" class="nav-menu">
+                        <li><a href="index.html#work">Work</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="case-studies-intro">
+            <div class="container">
+                <h1>Oh no!</h1>
+                <p>Something went terribly wrong.</p>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> Shawn Sharp. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sharpinit/" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript to update year and handle mobile menu
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', function() {
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !expanded);
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

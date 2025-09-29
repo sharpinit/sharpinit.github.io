@@ -1,47 +1,80 @@
 /* styles.css - WCAG 2.2 AAA Compliant with best practices */
-:root {
-    /*
-    #FAFAFA		Background
-    #0073AE		Sharp Blue
-    #295266		Dark Blue
-    #666666		Foreground Gray
-    #555555		Footer Background Gray
-    #CCCCCC		Footer Foreground
-    */
-    /* Colors */
-    --color-primary: #0073AE;
-    --color-primary-dark: #295266;
-    --color-text: #444444;
-    --color-text-light: #666666;
-    --color-background: #FAFAFA;
-    --color-background-alt: #F5F5F5;
-    --color-border: #CCCCCC;
-    --color-focus: #0088cc;
-    
-    /* Spacing */
-    --space-xs: 0.5rem;
-    --space-sm: 1rem;
-    --space-md: 2rem;
-    --space-lg: 4rem;
-    
-    /* Other */
-    --border-radius: 4px;
-    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
-}
+
 
 /* Light mode */
 @media (prefers-color-scheme: light) {
-    body {
-    	background-color: var(--color-background);
-        color: var(--color-text);
+    :root {
+        /*
+        #FAFAFA		Background
+        #0073AE		Sharp Blue
+        #295266		Dark Blue
+        #666666		Foreground Gray
+        #555555		Footer Background Gray
+        #CCCCCC		Footer Foreground
+        */
+        /* Colors */
+        --color-primary: #0073AE;
+        --color-primary-dark: #295266;
+        --color-text: #444444;
+        --color-text-light: #666666;
+        --color-background: #FAFAFA;
+        --color-background-alt: #F5F5F5;
+        --color-footer-background: #F5F5F5;
+        --color-border: #CCCCCC;
+        --color-focus: #0088cc;
+        
+        /* Spacing */
+        --space-xs: 0.5rem;
+        --space-sm: 1rem;
+        --space-md: 2rem;
+        --space-lg: 4rem;
+        
+        /* Other */
+        --border-radius: 4px;
+        --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        --transition: all 0.3s ease;
+    }
+        .hero {
+    /* background-color: var(--color-background-alt); */
+    background: var(--color-background-alt) url("../img/Texture.png");
     }
 }
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
-        color: var(--color-background);
+    :root {
+        /*
+        #FAFAFA		Background
+        #0073AE		Sharp Blue
+        #295266		Dark Blue
+        #666666		Foreground Gray
+        #555555		Footer Background Gray
+        #CCCCCC		Footer Foreground
+        */
+        /* Colors */
+        --color-primary: #0090DB;
+        --color-primary-dark: #0073AE;
+        --color-text: #FAFAFA;
+        --color-text-light: #666666;
+        --color-background: #000101;
+        --color-background-alt: #000508;
+        --color-footer-background: #000508;
+        --color-border: #111111;
+        --color-focus: #0099E5;
+        
+        /* Spacing */
+        --space-xs: 0.5rem;
+        --space-sm: 1rem;
+        --space-md: 2rem;
+        --space-lg: 4rem;
+        
+        /* Other */
+        --border-radius: 4px;
+        --shadow: 0 2px 8px rgba(0, 0, 0, .25);
+        --transition: all 0.3s ease;
+    }
+    .hero {
+    /* background-color: var(--color-background-alt); */
+    background: var(--color-background-alt) url("../img/Texture5.png");
     }
 }
 /* Base styles */
@@ -149,7 +182,7 @@ section {
     top: -40px;
     left: 0;
     background: var(--color-primary);
-    color: white;
+    color: var(--color-background);
     padding: 8px;
     z-index: 100;
     transition: top 0.3s;
@@ -158,7 +191,7 @@ section {
 
 .skip-link:focus, .skip-link:hover {
     top: 0;
-    color: white;
+    color: var(--color-background);
 }
 
 /* Header */
@@ -218,8 +251,6 @@ header {
 
 /* Hero section */
 .hero {
-    /* background-color: var(--color-background-alt); */
-    background: var(--color-background-alt) url("../img/Texture.png");
     padding: var(--space-lg) 0;
 }
 
@@ -237,7 +268,7 @@ header {
 .button {
     display: inline-block;
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-background);
     padding: var(--space-xs) var(--space-md);
     border-radius: var(--border-radius);
     text-decoration: none;
@@ -249,7 +280,7 @@ header {
 .button:hover, .button:focus {
     background-color: var(--color-primary-dark);
     border-color: var(--color-primary-dark);
-    color: white;
+    color: var(--color-background);
     text-decoration: none;
     border-radius: var(--border-radius);
 }
@@ -384,9 +415,10 @@ header {
 
 /* Footer */
 footer {
-    background-color: var(--color-text);
-    color: white;
+    background-color: var(--color-footer-background);
     padding: var(--space-md) 0;
+    border-color: var(--color-border);
+    border-top-style: solid;
 }
 
 footer .container {
@@ -396,12 +428,10 @@ footer .container {
 }
 
 footer a {
-    color: white;
     margin-left: var(--space-sm);
 }
 
 footer a:hover, footer a:focus {
-    color: white;
     text-decoration: none;
     border-radius: var(--border-radius);
 }
@@ -506,7 +536,7 @@ footer a:hover, footer a:focus {
     height: 100vh;
 }
 .password-form {
-    background: white;
+    background: var(--color-background);
     padding: 40px;
     border-radius: 8px;
     box-shadow: var(--shadow);

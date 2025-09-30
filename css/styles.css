@@ -54,7 +54,7 @@
         --color-primary: #0090DB;
         --color-primary-dark: #0073AE;
         --color-text: #FAFAFA;
-        --color-text-light: #666666;
+        --color-text-light: #FAFAFA;
         --color-background: #000101;
         --color-background-alt: #000508;
         --color-footer-background: #000508;
@@ -418,7 +418,7 @@ footer {
     background-color: var(--color-footer-background);
     padding: var(--space-md) 0;
     border-color: var(--color-border);
-    border-top-style: solid;
+    border-top-style: solid 1px;
 }
 
 footer .container {

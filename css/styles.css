@@ -544,6 +544,9 @@ footer a:hover, footer a:focus {
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {    
+    header {
+        position: relative;
+    }
     .menu-toggle {
         display: block;
     }

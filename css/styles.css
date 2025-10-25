@@ -283,6 +283,7 @@ header {
     color: var(--color-background);
     text-decoration: none;
     border-radius: var(--border-radius);
+    transform: translate(0, 0.25rem);
 }
 
 /* Work section */
@@ -307,8 +308,8 @@ header {
 }
 
 .project-card:hover, .project-card:focus-within {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px) translateX(4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 .project-card a {
@@ -432,7 +433,9 @@ footer a {
 
 footer a:hover, footer a:focus {
     text-decoration: none;
-    border-radius: var(--border-radius);
+    border-radius: 0;
+    border-bottom: 2px var(--color-primary-dark) solid;
+    padding: .25rem;
 }
 
 /* Case studies page */

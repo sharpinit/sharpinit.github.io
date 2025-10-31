@@ -138,6 +138,9 @@ p {
     margin-bottom: var(--space-sm);
     max-width: 60ch;
 }
+strong {
+    font-weight: 600;
+}
 a {
     color: var(--color-primary);
     text-decoration: underline;

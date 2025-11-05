@@ -272,6 +272,11 @@ header {
     margin-bottom: var(--space-md);
 }
 
+.company {
+    padding: var(--space-md) 0;
+    background-color: var(--color-border);
+}
+
 /* Buttons */
 .button {
     display: inline-block;
@@ -396,6 +401,33 @@ a.links:focus {
     align-items: start;
     text-align: left;
 	grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+}
+.co-content {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--space-lg);
+    row-gap: var(--space-md);
+	max-width:100%;
+    margin-bottom: var(--space-sm);
+    padding-left: 0
+}
+.co-img{
+    height: 40px;
+    width: auto;
+    margin-bottom: 0;
+    padding-left: 0
+}
+.co-header{
+    font-weight: 400; 
+    color: var(--color-text-light);
+}
+
+.co{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom:0px
 }
 
 .about-image img {

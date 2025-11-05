@@ -117,7 +117,7 @@ h2 {
     font-size: 2rem;
     margin-top: var(--space-lg);
     margin-bottom: var(--space-md);
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h3 {
@@ -272,11 +272,6 @@ header {
     margin-bottom: var(--space-md);
 }
 
-.company {
-    padding: var(--space-md) 0;
-    background-color: var(--color-border);
-}
-
 /* Buttons */
 .button {
     display: inline-block;
@@ -388,19 +383,11 @@ a.links:focus {
     text-decoration: underline;
     align-self: flex-start;
 }
-
-/* About section */
-.about-section {
-    background-color: var(--color-background-alt);
-    padding: var(--space-lg) 0;
-}
-
-.img-content {
-    display: grid;
-    gap: var(--space-md);
-    align-items: start;
-    text-align: left;
-	grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+/* Company section */
+.company {
+    padding: var(--space-md) 0;
+    background-color: white;
+    box-shadow: var(--shadow);
 }
 .co-content {
     list-style: none;
@@ -419,8 +406,7 @@ a.links:focus {
     padding-left: 0
 }
 .co-header{
-    font-weight: 400; 
-    color: var(--color-text-light);
+    font-size: 1.5rem;
 }
 
 .co{
@@ -428,6 +414,20 @@ a.links:focus {
     display: flex;
     justify-content: center;
     margin-bottom:0px
+}
+
+/* About section */
+.about-section {
+    background-color: var(--color-background-alt);
+    padding: var(--space-lg) 0;
+}
+
+.img-content {
+    display: grid;
+    gap: var(--space-md);
+    align-items: start;
+    text-align: left;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
 }
 
 .about-image img {

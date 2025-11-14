@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio site dedicated to Shawn Sharp's work."/>
+    <meta name="keywords" content="interaction design, visual design, graphic design, ux design, product design"/>
+    <meta name="copyright" content="Copyright Shawn Sharp 2025"/>
+    <meta name="author" content="Shawn Sharp"/>
+    <title>Filtering is Easy? by Shawn Sharp</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" aria-current="page" class="logo">
+                    <img src="img/Sharp.png" alt="Shawn Sharp Logo">
+                </a>
+                
+                <nav>
+                    <button aria-expanded="false" aria-controls="nav-menu" class="menu-toggle">Menu</button>
+                    <ul id="nav-menu" class="nav-menu">
+                        <li><a href="index.html#work">Work</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <article id="project1" class="case-study">
+            <section class="case-studies-intro">
+                <div class="container">
+                    <h1>Filtering: harder than it looks</h1>
+                    <p>Going beyond surface solutions to build component-level filters that are accessible, scalable, and follow best practices.</p>
+                </div>
+            </section>
+
+            <div class="container">
+                <section class="case-study-overview">
+                    <h2>The problem</h2>
+                    <p>Deque had six products with six different filtering implementations, and none of them met accessibility standards.</p>
+                    <p>One product used modals. Another scattered pills and badges across the interface. A third had no filtering at all. Beyond visual inconsistency, the real crisis was accessibility. Industry research confirmed what our audits revealed: most filtering is not accessible, leaving users with disabilities unable to effectively use these core features.</p>
+                    <p><strong>The consequences were significant:</strong></p>
+                    <ul>
+                        <li>Users with disabilities could not filter content independently</li>
+                        <li>Teams rebuilt filtering patterns for every new product, wasting development resources</li>
+                        <li>Inconsistent experiences across the product family created confusion and eroded trust</li>
+                        <li>Deque, an accessibility company, had inaccessible filtering throughout its own products</li>
+                    </ul>
+                    <p>This was not just a design problem. It was a credibility problem. We needed to build a unified, accessible filtering pattern that would work across all products and set a new standard for the industry.</p>
+                </section>
+
+                <section class="case-study-overview">
+                    <h2>The solution</h2>
+                    <p>We created a single, reusable filtering component built on accessibility best practices and comprehensive UX research. The pattern consolidated scattered approaches into one system that adapts to any product context while maintaining consistent interaction patterns and full accessibility compliance.</p>
+                    <p><strong>Key innovations:</strong></p>
+                    <ul>
+                        <li>Applied filters always visible for shared list context (critical for team collaboration)</li>
+                        <li>Explicit user action required before results load (eliminates confusion and supports cognitive accessibility)</li>
+                        <li>Responsive design treating zoom states as mobile viewports (serves both mobile users and accessibility needs)</li>
+                        <li>Consistent interaction hierarchy: Search, Sort, Filter across all products</li>
+                        <li>Accessible labels and controls throughout, tested with assistive technology</li>
+                    </ul>
+                    <p><strong>The impact:</strong></p>
+                    <ul>
+                        <li>One reusable component replaces six inconsistent implementations</li>
+                        <li>Faster development across product teams (grab and use out of the box)</li>
+                        <li>Full accessibility compliance throughout the filtering experience</li>
+                        <li>Users report the new pattern is "much easier" and they navigate "without hesitation"</li>
+                        <li>Establishes Deque as practicing what we preach about accessible design</li>
+                    </ul>
+
+                </section>
+                <section class="case-study-overview">
+                    <h2>My role</h2>
+                    <p>I led the research, discovery, and interaction design to unify filtering across all products, including the creation of core prototypes for final designs. I worked closely with the lead designer to stress-test the pattern across diverse product contexts and collaborated with development teams on implementation specifications.</p>
+                    <p><strong>Tools:</strong> Figma, FigJam, Baymard Research, Custom Claude Project, Moderated User Testing</p>
+                </section>
+
+                <div class="case-study-image">
+                    <img src="img/filtering/filtering-wire-drawer.png" alt="Black and white version with simple visual design of the filtering component and pattern with the filter drawer open over a filtered user management view.">
+                </div>
+
+                <div class="case-study-content">
+                    <section class="case-study-section">
+                        <h3>The Problem</h3>
+                        <p>Imagine products dressed completely differently for the same occasion; that's how Deque's filtering looked. One product used modals, the next had scattered pills and badges. It was, frankly, a hodgepodge. Beyond the visual mess, the real problem was that it often wasn't accessible, leaving many unable to use it easily. We decided to hit this head-on. Our goal was to build the filtering pattern to rule them all, paving the way for accessibility across our entire product line.</p>
+                        <h3>Process</h3>
+                        
+                        <h4>Research</h4>
+                        <p>We rolled up our sleeves and got down to serious detective work. First, we tested filter icons with real users and quickly learned the classic funnel was the clear winner. Users just got it! We also conducted a thorough audit, meticulously capturing notes on filtering across all six of Deque's products to understand the existing chaos.</p>
+
+                        <div class="case-study-image">
+                            <img src="img/filtering/filtering-deque-lineup.png" alt="Lineup view of all of Deque's products and how they allow (or do not allow) filtering in the product.">
+                        </div>
+                        
+                        <p>Then, we dove into the vast ocean of external wisdom. We devoured findings from Baymard, UX Planet, NNGroup, PencilandPaper.io, and SmashingMagazine. We even played "compare and contrast" with filtering from top examples like Home Depot, Ikea, and Walmart, and less ideal ones such as Yahoo, Bing, and Google. To truly understand our users' habits, we also reviewed filtering in products they live in, including GitHub, Jira, Slack, and Google Drive.</p>
+
+                        <div class="case-study-image">
+                            <img src="img/filtering/filtering-best-practices.png" alt="Artboard of sticky notes of research, best practices, and insights about filtering.">
+                        </div>
+                        
+                        <p>This deep dive gave us some major "Aha!" moments. The biggest was that "applied filters" are essential for our users. For single users, a reminder might feel redundant ("I just clicked blue!"), but with Deque's shared lists, displaying applied filters is critical for context and meaning for all recipients. Another eye-opener: no single company truly does filtering "great" universally! Many had inconsistencies like auto-loading on single checkboxes (leaving you wondering!), unclear next steps, or wildly changing experiences between mobile and desktop. A key discovery emerged as well. The best filtering happens when you know your content and only provide the most relevant filters upfront, tucking others into a "more" menu or flyout. Speaking of mobile, we learned "mobile" isn't just a device; it's often a viewport size. Users zooming in get that "mobile" experience.</p>
+
+                        <div class="case-study-image">
+                            <img src="img/filtering/filtering-explore.png" alt="Examples of various explorations as I determined the best patterns for Deque's products.">
+                        </div>
+
+                        <div class="case-study-image">
+                            <img src="img/filtering/filtering-prod-explore2.png" alt="Examples of various end-user products using filtering in their products, some good and some bad.">
+                        </div>
+
+                        <p>These varied findings and industry "ahas" allowed us to leverage UX best practices. More importantly, they freed us to zero in on critical, often-ignored accessibility downfalls. This shaped crucial questions. For example, what happens on zoom? How does it announce for assistive tech? How do we support cognitive disabilities?</p>
+                        
+                        <h4>Design Solutions</h4>
+                        <p>With our research complete, it was time to make some magic. I explored all possible filtering options, taking time between each wireframe set to "poke holes" and break down unknowns. I'd even workshop with others to spot sneaky red flags. This iterative process, guided by our "Aha!" that only the most relevant filters should be front and center, eventually led us to our core design.</p>
+                        
+                        <div class="case-study-image">
+                            <img src="img/filtering/filtering-wires.png" alt="View of the fitlering pattern and component getting fleshed out and documented for hand-off and questions.">
+                        </div>
+
+                        <p>Our core design emerged with a few key pieces. We placed the most-needed filters upfront (ideally 4-5 max). For deeper dives, all filters lived in a single modal or drawer. A critical "applied filters" section clearly showed active filters, allowing users to clear all (if multiple) or remove single filters, either from this section or the main menu. We standardized the interaction hierarchy for all users and products. The order became Search, then Sort, then Filter. All filters needed to support single select (radios), multi-select (checkboxes), and range selectors.</p>
+                        <p>Accessibility was baked in from day one. All controls received clear labels, differentiating "filters" from "applied filters" to avoid confusion. Filters respond fluidly. If the viewport shrinks (our "mobile is zoom state" insight!), they gracefully tuck into a menu, drawer, or modal, minimizing disruption. Crucially, every filter selection now requires an explicit action before results load. This was a direct fix for a major user pain point.</p>
+                        
+                        <div class="case-study-image">
+                            <img src="img/filtering/filtering-wire-proto.png" alt="Snapshot of the prototype on an example user management page used for usability testing.">
+                        </div>
+                        <div class="case-study-image">
+                            <img src="img/filtering/filtering-wire-drawer.png" alt="Snapshot of the prototype on an example user management page with the all filters drawer opened on the right used for usability testing.">
+                        </div>
+
+                        <p>After testing these wireframe prototypes, my role shifted. I was consulted with and helped answer any questions around real content on the final design files, ensuring our vision carried through to implementation.</p>
+
+                        <h4>Testing</h4>
+                        <p>Time to put our unified filtering vision to the test. We started with a wireframe prototype, focusing on filtering in its most common format: user management. Tasks were straightforward; for example, "Find X administrators" or "Identify department with most users." We observed how long it took, if they found info, and any filter mechanism hiccups.</p>
+                        <p>Initial tests revealed few earth-shattering insights, which is often a good sign after solid research! The main takeaways were that our "clear filters" button should always be enabled (never disabled), and left-aligned buttons unexpectedly improved legibility.</p>
+                        <p>This wasn't a one-and-done. The lead designer and I continue to stress-test the pattern by placing it in diverse product areas. This uncovers subtle nuances, such as behavior with long rule names or URL clamping, ensuring it holds up across varied content and contexts.</p>
+                    </section>
+
+                    <section class="case-study-section">
+                        <h3>Did it Work?</h3>
+                        <p>Currently rolling out across our product family, this unified filtering pattern is being built as a true superhero component. Our team is creating a reusable piece of magic. This lets other product teams quickly grab and use it "out of the box," only needing to finesse the data being filtered. All of this means faster, more consistent development across Deque.</p>
+                        <p>While hard numbers are pending, anecdotal evidence is incredibly promising. Users perceive it as much easier, even "skimming through it so quickly without hesitation." It seems we've built something intuitive that just works.</p>
+                        <h4>Key Learnings</h4>
+                        <ul>
+                            <li>Clarity Trumps All (Even Extra Labels). Clarity is absolutely key to our UI. Having extra labels doesn't negatively impact a user's experience. Instead, it's the lack of labeling that leaves users questioning and frustrated. When in doubt, clarify!</li>
+                            <li>The "Good Enough" Trap is Real. My biggest takeaway is that so many products fall into the trap of "good enough" filtering. Even when it makes users angry, confused, or lost, companies settle. This project proved that investing in truly great filtering is worth every effort for user satisfaction and clarity.</li>
+                            <li>Unified Design Drives Efficiency. Building one robust pattern not only helps users by making products consistent but also streamlines development, allowing teams to focus on unique features instead of reinventing the wheel.</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="case-study-navigation">
+                    <div class="nav-links">
+                        <a href="ios-testing-made-easy.html" class="nav-link">
+                            <span>Previous Case Study:</span>
+                            <span>iOS Accessibility Testing</span>
+                        </a>
+                        <a href="see-my-screen.html" class="nav-link next">
+                            <span>Next Case Study:</span>
+                            <span>"Can you see my screen?"</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> Shawn Sharp. All rights reserved.</p>
+            <a href="https://www.linkedin.com/in/sharpinit/" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

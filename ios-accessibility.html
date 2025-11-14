@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio site dedicated to Shawn Sharp's work."/>
+    <meta name="keywords" content="interaction design, visual design, graphic design, ux design, product design"/>
+    <meta name="copyright" content="Copyright Shawn Sharp 2025"/>
+    <meta name="author" content="Shawn Sharp"/>
+    <title>iOS Accessibility Testing by Shawn Sharp</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" aria-current="page" class="logo">
+                    <img src="img/Sharp.png" alt="Shawn Sharp Logo">
+                </a>
+                
+                <nav>
+                    <button aria-expanded="false" aria-controls="nav-menu" class="menu-toggle">Menu</button>
+                    <ul id="nav-menu" class="nav-menu">
+                        <li><a href="index.html#work">Work</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <article id="project1" class="case-study">
+            <section class="case-studies-intro">
+                <div class="container">
+                    <h1>iOS Accessibility Testing</h1>
+                    <p>Breaking ground on an accessibility testing software for iOS apps.</p>
+                </div>
+            </section>
+
+            <div class="container">
+                <section class="case-study-overview">
+                    <h2>The problem</h2>
+                    <p>iOS accessibility testing was preventing teams from building inclusive mobile applications and blocking new business.</p>
+                    <p><strong>Current users were frustrated:</strong> "Why can't it be as easy as your Android testing application? Anyone can download the application and start testing."</p>
+                    <p><strong>Prospective customers refused to buy:</strong> "We will not be purchasing your software until it is easy enough for anyone to do."</p>
+                    <p><strong>The technical barrier was clear:</strong> SDK-driven setup requiring front-end, back-end, and Xcode expertise. Apple's security model created additional configuration hurdles that we are still having to jump. Non-developers attempting accessibility testing faced insurmountable technical barriers.</p>
+                    <p><strong>The business impact was equally clear:</strong> teams were either skipping iOS accessibility testing entirely or consuming expensive developer time for every test session. Our Android testing application had set user expectations for simplicity, and iOS testing could not meet them.</p>
+                </section>
+
+                <section class="case-study-section">
+                    <h2>The solution</h2>
+                    <p>We built a dedicated Electron desktop application that abstracted away the complex SDK setup, reducing the barrier to entry from multiple technical configuration steps to a single line of code.</p>
+                    <p><strong>Key innovation:</strong> The desktop application handled all SDK complexity behind the scenes, working within Apple's security constraints while requiring minimal technical knowledge from users. Physical device testing became straightforward, and setup time dropped dramatically.</p>
+                    
+                    <h3>The impact:</h3>
+                    <ul>
+                        <li>Non-developers could independently test iOS accessibility</li>
+                        <li>Results displayed directly in the application, eliminating trips to the web dashboard</li>
+                        <li>Users gained confidence to test complete workflows, not just individual screens</li>
+                        <li>The desktop application established a foundation for centralized mobile testing across both iOS and Android platforms</li>
+                    </ul>
+                </section>
+
+                <section class="case-study-section">                    
+                    <h2>My role</h2>
+                    <p>eveloper. My responsibilities included user research, wireframing, prototyping, usability testing, and delivering high-fidelity annotated designs for a quarter-long development sprint.</p>
+                    <p><strong>Tools:</strong> Figma, FigJam, User Interviews, Moderated Usability Testing, Custom Claude Project</p>
+                </section>
+
+                <section class="case-study-section">
+                    <h2>How we got here</h2>
+                    <h3>Research: Understanding the Real Barriers</h3>
+                    <p>We started by mapping what we knew, what we assumed, and what we needed to validate. Working with our mobile PM and product owner, we used a Certainty, Suppositions, and Doubts (CSD) Matrix to identify risks and avoid design biases.</p>
+                    
+                    <div class="case-study-image">
+                        <img src="img/iostesting/ios-scan-csd.png" alt="Large artboard of sticky notes going over the certainties, suppositions, and doubts for the ios accessibility scanner.">
+                    </div>
+
+                    <p><strong>Competitive analysis revealed</strong> Apple's security infrastructure was a universal challenge. Competitors took varied approaches: some attempted remote testing solutions, others required similarly complex installation processes, and some avoided iOS testing altogether. Critically, we had a head start, our Android testing application launched a year prior provided valuable insights into mobile testing user behaviors and expectations.</p>
+                    
+                    <div class="case-study-image">
+                        <img src="img/iostesting/ios-scan-compete.png" alt="Screenshots and notes taken after reviewing the competitors.">
+                    </div>
+
+                    <p>We mapped the entire user workflow step-by-step, identifying friction points and opportunities. The key questions driving our research: If Xcode setup is the primary barrier, how do we make this fundamentally easier? What makes a desktop application truly valuable beyond just wrapping the SDK?</p>
+                    
+                    <div class="case-study-image">
+                        <img src="img/iostesting/ios-scan-flow.png" alt="Decision flow diagram of the user experience for the iOS testing application.">
+                    </div>
+
+                    <h3>Design strategy: simplicity through technical abstraction</h3>
+                    <p>Time and cost constraints eliminated virtual machine solutions. Most users had physical devices readily available. The breakthrough was recognizing an Electron desktop application could handle SDK complexity while working within Apple's security model and Mac ecosystem requirements.</p>
+                    <p><strong>Our design philosophy:</strong> Get users testing as fast as possible with zero technical friction.</p>
+                    <p>The desktop application absorbed the complex SDK configuration screens, managing all technical requirements after initial installation. While Xcode remained necessary (Apple's requirement), we reduced the coding requirement to a single line, dramatically lowering the intimidation factor.</p>
+                    <p><strong>Wireframing focused on minimum viable interactions.</strong> For a user testing a single screen, what information was truly essential? Should we request a test name? Tags? Should the application remember device preferences? These questions led to a clean, spacious design that prioritized speed over configurability.</p>
+                    
+                    <div class="case-study-image">
+                        <img src="img/iostesting/ios-scan-wires.png" alt="Basic function wireframe diagram of the iOS application scanner.">
+                    </div>
+
+                    <p>We integrated our accessible, in-house React design components for visual consistency across the Deque product family. To ensure content clarity and brand voice consistency, I created a custom Claude project configured with specific accessibility guidelines, readability standards, and brand voice requirements. This ensured every piece of interface copy remained clear, simple, and jargon-free throughout the product.</p>
+                    
+                    <div class="case-study-image">
+                        <img src="img/iostesting/ios-test-name.png" alt="Snapshot of the prototype on the device and application selector screen used for usability testing.">
+                    </div>
+
+                    <p>Knowing the application would occupy limited screen space, we embraced whitespace, Inviting users in rather than overwhelming them with options.</p>
+
+                    <h3>Prioritization and Collaboration</h3>
+                    <p>Throughout the quarter, I worked directly with the lead developer and our technical product owner to meet our aggressive launch timeline. We made strategic scope decisions:</p>
+                    <ul>
+                        <li><strong>Avoided complex virtual environments</strong> beyond Xcode's built-in capabilities</li>
+                        <li><strong>Deferred in-app tagging</strong> to post-launch (tags could be applied via the web dashboard, and Android app research suggested this was a smart fast-follow feature)</li>
+                        <li><strong>Mapped every possible error state</strong> with the lead developer to prevent wasting development resources on solutions for assumed errors that would not actually occur</li>
+                    </ul>
+                    <p>This collaboration ensured we built the right solution within our constraints.</p>
+                    <h3>Testing: Validating with Real Users</h3>
+                    <p>We conducted moderated remote usability testing sessions with participants new to Xcode and accessibility testing, our target novice users. We also gathered early feedback from initial customers to validate our direction.</p>
+                    <p><strong>Testing revealed two critical usability issues:</strong></p>
+                    <ol>
+                        <li><strong>Help link discoverability:</strong> Users struggled to locate the Help feature</li>
+                        <li><strong>Tag application confusion:</strong> Users were uncertain when tags were actually applied to their tests</li>
+                    </ol>
+                    <p>The tagging issue was particularly instructive. Our initial design used implicit tag addition (a pattern observed in other applications), but testing confirmed it lacked clarity. The solution was elegantly simple: add an explicit "Add" button after the tag text field. This single change dramatically improved usability and user confidence.</p>
+                    
+                    <div class="case-study-image">
+                        <img src="img/iostesting/ios-scan-tag.png" alt="Snapshot of the tags screen used for usability testing.">
+                    </div>
+
+                    <p>This feedback loop transformed theoretical designs into intuitive experiences for real users.</p>
+                    <h3>Results display: meeting users where they are</h3>
+                    <p>One significant improvement emerged from understanding user workflow needs: displaying test results directly in the application. Users wanted immediate feedback, is this screen clean or does it have accessibility issues?</p>
+                    <p>Previously, users received only a generic "success, we scanned the page" confirmation, requiring them to navigate to the web dashboard to see actual results. Adding a simple issue count on-screen eliminated that extra step, giving users confidence to continue testing complete workflows or investigate issues immediately. This small change had substantial impact on testing efficiency and user satisfaction.</p>
+                    
+                    <div class="case-study-image">
+                        <img src="img/iostesting/ios-scan-complete.png" alt="Snapshot of the final, full-color, scan complete screen.">
+                    </div> 
+
+                    <div class="case-study-image">
+                        <img src="img/iostesting/ios-scan-final.png" alt="Final redlined design file of all of the screens ready for development.">
+                    </div>         
+
+                    <!-- <div class="case-study-image">
+                        <img src="img/iostesting/ios-test-complete.png" alt="Snapshot of the scan complete screen used for usability testing.">
+                    </div> -->
+                </section>
+
+                <section class="case-study-section">
+                    <h2>Key learnings</h2>
+                    <p><strong>Simplicity wins, even for complex technical challenges.</strong> We demonstrated that accessibility testing can be both intuitive and visually appealing. While developers often desire extensive configuration options, our testing consistently showed that simplified, focused designs satisfy the broader user base.</p>
+                    <p><strong>The Help button paradox.</strong> Testing revealed that even standard UI patterns like Help button placement can confuse users when duplicated or positioned inconsistently. As one participant noted: "This is interesting. Because there is a need help here and there is also a like, a help button here." Clarity always trumps conventional placement.</p>
+                    <p><strong>Hub environments reduce friction.</strong> The desktop application's potential to centralize all mobile testing (iOS and eventually Android) creates a significantly more seamless user experience. Keeping users in one environment eliminates tool-switching overhead.</p>
+                    <p><strong>User feedback improves the entire product ecosystem.</strong> Insights from this project clarified design patterns across all Deque products, demonstrating how focused user research can generate value beyond a single project. We continue refining based on feedback as the product reaches full release.</p>                   
+                </section>
+
+                <div class="case-study-navigation">
+                    <div class="nav-links">
+                        <!-- <a href="filtering-issues.html" class="nav-link">
+                            <span>Previous Case Study:</span>
+                            <span>Filtering is Easy?</span>
+                        </a> -->
+                        <a href="filtering-issues.html" class="nav-link next">
+                            <span>Next Case Study:</span>
+                            <span>Filtering is Easy?</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> Shawn Sharp. All rights reserved.</p>
+            <a href="https://www.linkedin.com/in/sharpinit/" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

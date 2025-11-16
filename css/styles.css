@@ -529,11 +529,6 @@ footer a:hover {
     color: var(--color-text-light);
 }
 
-.case-study-overview {
-    max-width: 50rem;
-    margin-bottom: var(--space-md);
-}
-
 .case-study-image {
     margin: var(--space-md) 0;
     border-radius: var(--border-radius);

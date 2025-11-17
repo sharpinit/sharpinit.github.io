@@ -7,7 +7,7 @@
     <meta name="keywords" content="interaction design, visual design, graphic design, ux design, product design"/>
     <meta name="copyright" content="Copyright Shawn Sharp 2025"/>
     <meta name="author" content="Shawn Sharp"/>
-    <title>Filtering is Easy? by Shawn Sharp</title>
+    <title>Filtering: built right not copied by Shawn Sharp</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -36,7 +36,7 @@
         <article id="project1" class="case-study">
             <section class="case-studies-intro">
                 <div class="container">
-                    <h1>Filtering: harder than it looks</h1>
+                    <h1>Filtering: built right not copied</h1>
                     <p>Going beyond surface solutions to build component-level filters that are accessible, scalable, and follow best practices.</p>
                 </div>
             </section>
@@ -46,13 +46,6 @@
                     <h2>The problem</h2>
                     <p>Deque had six products with six different filtering implementations, and none of them met accessibility standards.</p>
                     <p>One product used modals. Another scattered pills and badges across the interface. A third had no filtering at all. Beyond visual inconsistency, the real crisis was accessibility. Industry research confirmed what our audits revealed: most filtering is not accessible, leaving users with disabilities unable to effectively use these core features.</p>
-                    <p><strong>The consequences were significant:</strong></p>
-                    <ul>
-                        <li>Users with disabilities could not filter content independently</li>
-                        <li>Teams rebuilt filtering patterns for every new product, wasting development resources</li>
-                        <li>Inconsistent experiences across the product family created confusion and eroded trust</li>
-                        <li>Deque, an accessibility company, had inaccessible filtering throughout its own products</li>
-                    </ul>
                     <p>This was not just a design problem. It was a credibility problem. We needed to build a unified, accessible filtering pattern that would work across all products and set a new standard for the industry.</p>
                     <div class="case-study-image">
                         <img src="img/filtering/filtering-deque-lineup.png" alt="Lineup view of all of Deque's products and how they allow (or do not allow) filtering in the product.">
@@ -64,10 +57,11 @@
                     <p>We created a single, reusable filtering component built on accessibility best practices and comprehensive UX research. The pattern consolidated scattered approaches into one system that adapts to any product context while maintaining consistent interaction patterns and full accessibility compliance.</p>
                     <p><strong>Key innovations:</strong></p>
                     <ul>
-                        <li>Applied filters always visible for shared list context (critical for team collaboration)</li>
-                        <li>Explicit user action required before results load (eliminates confusion and supports cognitive accessibility)</li>
+                        <li>Labels, like “applied filers” are always visible with filters for shared data context (critical for team collaboration)</li>
+                        <li>Explicit user action required before results load (eliminates confusion and supports cognitive, and assistive technology accessibility)</li>
                         <li>Responsive design treating zoom states as mobile viewports (serves both mobile users and accessibility needs)</li>
                         <li>Consistent interaction hierarchy: Search, Sort, Filter across all products</li>
+                        <li>Used a custom Claude content project to unify our language across products and projects</li>
                     </ul>
                     <p><strong>The impact:</strong></p>
                     <ul>
@@ -75,6 +69,7 @@
                         <li>Faster development across product teams (grab and use out of the box)</li>
                         <li>Full accessibility compliance throughout the filtering experience</li>
                         <li>Users report the new pattern is "much easier" and they navigate "without hesitation"</li>
+                        <li>Use of the funnel icon increased comprehension versus using the three line icon. Trending does not mean it will be known.</li>
                     </ul>
 
                 </section>
@@ -86,7 +81,7 @@
 
                 <section class="case-study-content">
                     <h2>How we got here</h2>
-                    <h3>Research: Understanding the Problem</h3>
+                    <h3>Research: understanding the problem</h3>
                     <p>We started by testing filter icons with real users. The classic funnel icon was the clear winner. Users immediately understood its meaning. Next, we conducted a comprehensive audit across all six Deque products, documenting how each one handled filtering.</p>
                     <div class="case-study-image">
                         <img src="img/filtering/filtering-best-practices.png" alt="Artboard of sticky notes of research, best practices, and insights about filtering.">

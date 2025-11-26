@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LLV9G8KB47"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LLV9G8KB47');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio site dedicated to Shawn Sharp's work."/>
+    <meta name="keywords" content="interaction design, visual design, graphic design, ux design, product design"/>
+    <meta name="copyright" content="Copyright Shawn Sharp 2025"/>
+    <meta name="author" content="Shawn Sharp"/>
+    <title>Simplifying user invitations by Shawn Sharp</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" aria-current="page" class="logo">
+                    <img src="img/Sharp.png" alt="Shawn Sharp Logo">
+                </a>
+                
+                <nav>
+                    <button aria-expanded="false" aria-controls="nav-menu" class="menu-toggle">Menu</button>
+                    <ul id="nav-menu" class="nav-menu">
+                        <li><a href="index.html#work">Work</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <article id="project1" class="case-study">
+            <section class="case-studies-intro">
+                <div class="container">
+                    <h1>Simplifying user invitations</h1>
+                    <p>Reducing a 10-step invitation process to 4 by eliminating redundant verification and surfacing critical requirements upfront.</p>
+                </div>
+            </section>
+
+            <div class="container">
+                <section class="case-study-content">
+                    <h2>The problem</h2>
+                    <p>Enterprise customers were creating their own documentation to help employees get started with our products. These PDF guides, complete with screenshots and step-by-step instructions, revealed a critical usability failure in our invitation flow.</p>
+                    <p><strong>As one enterprise customer told us during a call:</strong> "It takes 13 steps just to get started."</p>
+                    <p>In reality, it was 10 steps, but that was hardly better. Users bounced between the web browser and their email repeatedly. The flow was fragmented, confusing, and inconsistent across different scenarios (SaaS, SSO, on-prem). Years of patched repairs had created mismatched terminology and unnecessary verification steps.</p>
+                    <p><strong>The consequences were significant:</strong></p>
+                    <ul>
+                        <li>Enterprise customers were spending time creating workaround documentation instead of trusting our product</li>
+                        <li>Support tickets piled up from users who accidentally signed up with different emails than their invitations</li>
+                        <li>The experience felt dated. Customers repeatedly described our interface as "Windows 95"</li>
+                        <li>New users faced friction before ever reaching the product, damaging first impressions</li>
+                        <li>Inconsistent flows across deployment types created confusion and eroded trust</li>
+                    </ul>
+                    <p>This was not just a usability problem. It was a credibility problem. We needed to eliminate the redundant steps, create consistency across all scenarios, and bring the experience into the current era.</p>
+                </section>
+
+                <section class="case-study-content">
+                    <h2>The solution</h2>
+                    <p>We reduced the invitation flow from 10 steps to 4, eliminating redundant verification steps and front-loading critical requirements. The redesigned flow keeps users in a single context, removes unnecessary form fields, and provides a modern, accessible interface.</p>
+                    <p><strong>Key innovations:</strong></p>
+                    <ul>
+                        <li>Moved terms and conditions consent upfront instead of mid-flow, eliminating a step and meeting legal requirements earlier</li>
+                        <li>Removed the signup form entirely since invited users already have validated email addresses</li>
+                        <li>Eliminated redundant email verification in invite flows (the invitation itself serves as verification</li>
+                        <li>Consolidated user interactions behind loading states, hiding unnecessary complexity</li>
+                        <li>Refreshed visual design with improved spacing, structured layouts, and modern aesthetic</li>
+                    </ul>
+                    <p><strong>The impact:</strong></p>
+                    <ul>
+                        <li>60% reduction in steps (from 10 to 4)</li>
+                        <li>Eliminated common support issue (wrong email during signup)</li>
+                        <li>Single, consistent flow across all deployment scenarios (SaaS, SSO, on-prem)</li>
+                        <li>Modern interface addresses long-standing "dated" perception</li>
+                        <li>Currently in development, scheduled for Q1 2026 release</li>
+                    </ul>
+
+                </section>
+                <section class="case-study-content">
+                    <h2>My role</h2>
+                    <p>I led end-to-end UX design in close collaboration with the product manager. This project was part of the account section I primarily support. My responsibilities included flow auditing, stakeholder research, interaction design, accessibility compliance, and delivering final designs. I worked with QA to document all flows, collaborated with the lead developer on technical constraints, and coordinated with security and legal teams on compliance requirements.</p>
+                    <p><strong>Tools:</strong> Figma, User Flow Workshops, Wireframing, Accessibility Annotations</p>
+                </section>
+
+                <section class="case-study-content">
+                    <h2>How we got there</h2>
+                    <h3>Research: understanding the fragmentation</h3>
+                    <p>When we started, we had feedback from large enterprise customers who complained loudly about the invitation experience. Smaller customers tended to accept the problems, but enterprise clients made their frustration clear. This project had been a persistent pain point but never prioritized until customer complaints became impossible to ignore.</p>
+                    <p>I began by auditing all invitation flows across our products. What happens when you add a user in on-prem versus SaaS? What differs between inviting an admin versus a regular user? Are flows consistent across solutions or completely different?</p>
+                    <div class="case-study-image">
+                        <img src="img/invite/invite-discovery.png" alt="10 step invite flow captured during our auditing of our products. It has large comments where opportunities exist.">
+                    </div>
+                    <p>With help from our QA team, I documented 9 different invitation-related flows and an additional 6 flows for deleting or managing users. Mapping these side-by-side revealed the extent of the problem.</p>
+                    <p><strong>Key research insights:</strong></p>
+                    <p><strong>Years of patch repairs created an inconsistent mess.</strong> Some flows used different terminology. Others had simplified certain steps while leaving others bloated. The most critical flows, the ones customers used daily, needed immediate attention.</p>
+
+                    <p><strong>Customers were creating workaround documentation.</strong> The fact that enterprise customers were producing PDF guides with screenshots showed our flow was too complex to navigate without external help. This was embarrassing evidence of our usability failure.</p>
+
+                    <p><strong>4 to 5 steps were pure fluff.</strong> Once all flows were visible side-by-side, it became immediately obvious which steps added no value. Email verification in an invite flow? The user already received the email. Signup forms when we already had their email? Unnecessary friction that caused support tickets.</p>
+                    <div class="case-study-image">
+                        <img src="img/invite/invite-final-flow.png" alt="The final refined flow where only 4 steps are needed, which includes a loading step.">
+                    </div>
+                    <p>I worked with the lead developer who understood Keycloak (our identity management system) inside and out. I needed to understand why we made certain decisions historically and whether changing them would break other systems. This partnership ensured we could simplify without introducing technical debt.</p>
+                </section>
+
+                <section class="case-study-content">
+                    <h3>Design strategy: eliminating redundancy</h3>
+                    <p>I created wireframe flows to review with stakeholders and the development team, ensuring we were not designing ourselves into a corner or removing critical information. This became an iterative process with security and legal teams.</p>
+                    <div class="case-study-image">
+                        <img src="img/invite/invite-wireframe.png" alt="4 step wireframe invite solution used to talk with stakeholders.">
+                    </div>
+                    <p><strong>Our core design principles:</strong></p>
+                    <p><strong>Surface critical requirements upfront.</strong> We moved terms and conditions consent to the beginning of the flow. This eliminated a mid-flow interruption and satisfied legal requirements earlier. Security and legal initially had concerns about removing the explicit checkbox in favor of "by continuing you agree to..." language, but we worked through compliance requirements together.</p>
+                    <img>
+                    <p><strong>Remove redundant verification.</strong> In an invite flow, we already sent the email to the user. Email verification was duplicating work we had already done. We eliminated this step entirely.</p>
+                    <p><strong>Eliminate the signup form.</strong> Users were receiving invitations with their email addresses already specified. We reduced form fields from 6 to 4, removing business email and company name since users were being invited to an existing company solution. Asking them to re-enter information we already had created opportunities for error and unnecessary friction. We had support tickets from users who accidentally signed up with different emails than their invitations. Simplifying the form to just first name, last name, and password (with confirmation) eliminated the entire problem.</p>
+                    <p><strong>Hide complexity users do not need to see.</strong> The small amount of time required to provision a user account does not need user interaction. We moved these processing steps behind loading indicators, reducing perceived steps while maintaining the same backend processes.</p>
+                    <p><strong>Bring the interface into the current era.</strong> Customers repeatedly called our interface "dated" and compared it to "Windows 95." Working within our Cauldron component library constraints, I refreshed the sign-in forms and invite forms with improved spacing, structured layouts, and generous white space. I had done this successfully on another project and knew I could elevate the experience again.</p>
+                    <div class="case-study-image" style="width: 32rem;">
+                        <img src="img/invite/sign-in-form.png" alt="Sign-in form updated to look fresh and new.">
+                    </div>
+                    <div class="case-study-image" style="width: 32rem;">
+                        <img src="img/invite/invite-form.png" alt="Invite form updated to look fresh and new.">
+                    </div>
+                    <p><strong>Maintain accessibility throughout.</strong> Every design decision included accessibility considerations. I created detailed annotations showing keyboard navigation, screen reader behavior, and ARIA implementations to ensure the simplified flow remained fully accessible.</p>
+                    <div class="case-study-image">
+                        <img src="img/invite/invite-annotate.png" alt="Invite form with accessibility annotations that include headings, focus order, and reading order.">
+                    </div>
+
+                </section>
+
+                <section class="case-study-content">
+                    <h3>Constraints and Collaboration</h3>
+                    <p>This project required coordinating multiple stakeholders with different concerns:</p>
+                    <p><strong>Technical constraints:</strong> We had to continue using Keycloak for identity management. We needed to support Google and GitHub as authentication providers. The solution had to work across all deployment scenarios: SaaS, SSO, and on-prem installations.</p>
+                    <p>Component constraints: We had to work within our Cauldron component library, a small set of accessible in-house components. This limited some design options but ensured consistency across products.</p>
+                    <p><strong>Compliance requirements:</strong> Security and legal teams needed assurance that simplifying the flow would not introduce vulnerabilities or legal risk. The iterative review process ensured we met all requirements while dramatically improving the experience.</p>
+                </section>
+
+                <section class="case-study-content">
+                    <h2>Results</h2>
+                    <p>The redesigned invitation flow is currently in development and scheduled for Q1 2026 release.</p>
+                    <p><strong>We reduced steps by 60%.</strong> From 10 steps down to 4 (arguably 3, since one is a loading state). Users now complete invitations in a single browser context without email interruptions.</p>
+                    <p><strong>We eliminated a common support problem.</strong> By removing the signup form, we prevented users from accidentally registering with different emails than their invitations. This support ticket category will disappear entirely.</p>
+                    <p><strong>We created consistency across all scenarios.</strong> One unified flow now works for SaaS, SSO, and on-prem deployments. Users experience the same streamlined process regardless of their organization's setup.</p>
+                    <p><strong>We modernized the interface.</strong> The refreshed visual design addresses long-standing customer feedback about the product feeling "dated." Improved spacing, structured layouts, and modern aesthetics bring the experience forward.</p>
+                </section>
+
+                <section class="case-study-content">
+                    <h2>Key learnings</h2>
+                    <p><strong>Technical debt becomes visible when you map everything.</strong> Documenting all 9 invitation flows and 6 user management flows side-by-side made years of inconsistent patches immediately obvious. Without this comprehensive view, we would have continued patching individual flows rather than solving the systemic problem.</p>
+                    <p><strong>Redundancy hides in plain sight.</strong> Once we questioned each step, the redundant verification became obvious: we were verifying emails we had already sent invitations to. Sometimes the solution is not adding something new but recognizing what can be removed.</p>
+                    <p><strong>Workaround documentation is a failure signal.</strong> When customers create their own guides to navigate your product, they are telling you the experience is too complex. Enterprise customers should not need to produce PDF documentation for a basic invitation flow. Their workarounds were a clear signal of our failure.</p>
+                    <p><strong>Constraints drive creativity.</strong> Working within our limited component library while refreshing the visual design forced creative solutions. Spacing, layout, and white space can dramatically improve perceived modernity without requiring new components. Sometimes elevation comes from better use of what you already have.</p>
+                </section>
+
+
+                <div class="case-study-navigation">
+                    <div class="nav-links">
+                        <!-- <a href="ios-testing-made-easy.html" class="nav-link">
+                            <span>Previous case study:</span>
+                            <span>iOS Accessibility Testing</span>
+                        </a> -->
+                        <a href="see-my-screen.html" class="nav-link next">
+                            <span>Next Case Study:</span>
+                            <span>iOS accessibility testing</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> Shawn Sharp. All rights reserved.</p>
+            <a href="https://www.linkedin.com/in/sharpinit/" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

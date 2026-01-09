@@ -1,4 +1,5 @@
 /* styles.css - WCAG 2.2 AAA Compliant with best practices */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@400..900;400..900&display=swap');
 
 
 /* Light mode */
@@ -89,7 +90,7 @@ html {
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: "Jost", sans-serif;
     font-size: 1.125rem;
     line-height: 1.6;
     color: var(--color-text);
@@ -387,20 +388,19 @@ a.links:focus {
 .company {
     padding: var(--space-md) 0;
     background-color: white;
-    box-shadow: var(--shadow);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
 }
 .co-content {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    column-gap: var(--space-lg);
-    row-gap: var(--space-md);
+    column-gap: var(--space-sm);
 	max-width:100%;
-    margin-bottom: var(--space-sm);
-    padding-left: 0
+    padding-left: 0;
 }
 .co-img{
-    height: 40px;
+    height: 96px;
     width: auto;
     margin-bottom: 0;
     padding-left: 0

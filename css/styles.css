@@ -387,7 +387,7 @@ a.links:focus {
 /* Company section */
 .company {
     padding: var(--space-md) 0;
-    background-color: white;
+    background-color: var(--color-background);
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
 }

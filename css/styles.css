@@ -1,5 +1,5 @@
 /* styles.css - WCAG 2.2 AAA Compliant with best practices */
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@400..900;400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 /* Light mode */
@@ -90,7 +90,7 @@ html {
 }
 
 body {
-    font-family: "Jost", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1.125rem;
     line-height: 1.6;
     color: var(--color-text);

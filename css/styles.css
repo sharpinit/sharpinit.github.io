@@ -8,15 +8,15 @@
 
     :root {
         /* Colors */
-        --color-primary: #89825D;
-        --color-primary-dark: #999372;
+        --color-primary: #A39446;
+        --color-primary-dark: #706630;
         --color-text: #cccac2;
         --color-text-light: #e6e4da;
         --color-background: #030202;
         --color-background-alt: #0A0A08;
-        --color-footer-background: #89825D;
+        --color-footer-background: #A39446;
         --color-border: #383524;
-        --color-focus: #89825D;
+        --color-focus: #A39446;
         
         /* Spacing */
         --space-xs: 0.5rem;

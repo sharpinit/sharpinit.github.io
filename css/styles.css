@@ -1,22 +1,17 @@
 /* styles.css - WCAG 2.2 AAA Compliant with best practices */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-/* Light mode */
-
-/* Dark mode */
-
     :root {
         /* Colors */
-        --color-primary: #A39446;
-        --color-primary-dark: #706630;
-        --color-text: #cccac2;
-        --color-text-light: #e6e4da;
-        --color-background: #030202;
-        --color-background-alt: #0A0A08;
-        --color-footer-background: #A39446;
-        --color-border: #383524;
-        --color-focus: #A39446;
+        --color-primary: #0090DB;
+        --color-primary-dark: #0073AE;
+        --color-text: #B7BFC3;
+        --color-text-light: #BEDAE9;
+        --color-background: #000305;
+        --color-background-alt: #000A0F;
+        --color-footer-background: #0090DB;
+        --color-border: #003C5C;
+        --color-focus: #0090DB;
         
         /* Spacing */
         --space-xs: 0.5rem;
@@ -252,6 +247,10 @@ header {
     transform: translate(0, 0.25rem);
 }
 
+.button:active {
+    background-color: var(--color-text-light);
+}
+
 /* Links */
 a.links {
     color: var(--color-primary);
@@ -270,6 +269,7 @@ a.links:focus {
     outline: 3px solid var(--color-focus);
     outline-offset: 2px;
 }
+
 
 /* Work section */
 .work-section {

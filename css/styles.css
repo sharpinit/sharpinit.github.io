@@ -287,10 +287,11 @@ a.links:focus {
 .project-card {
     border-radius: var(--border-radius);
     overflow: hidden;
-     border: solid 0px var(--color-borderf);
+    outline: solid 1px var(--color-border);
+    background-color: var(--color-background);
     transition: var(--transition);
     height: 100%;
-    padding: var(--space-xs);
+    padding: 0;
 }
 
 .project-card:hover, .project-card:focus-within {

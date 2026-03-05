@@ -21,17 +21,29 @@
   <nav id="main-nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="#" class="nav-logo" aria-label="Sharp Physical Therapy & Performance — home">
-        <img src="assets/SPTP Logo_SPTP Primary Teal Text.png" alt="Sharp Physical Therapy & Performance logo"
-          class="nav-logo-img" />
+        <img src="assets/SPTP Logo_SPTP Primary Teal Text.png" alt="Sharp Physical Therapy & Performance logo" class="nav-logo-img" />
       </a>
-      <ul class="nav-links">
+
+      <ul class="nav-links" id="nav-links" role="list">
         <li><a href="#who">Who It's For</a></li>
         <li><a href="#approach">Approach</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
-      <a href="#contact" class="nav-cta">Get in Touch</a>
+
+      <div class="nav-right">
+        <a href="#contact" class="nav-cta">Get in Touch</a>
+        <button
+          class="nav-menu-btn"
+          id="nav-menu-btn"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+        >
+          Menu
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -557,7 +569,7 @@
           <div class="contact-method" role="listitem">
             <div class="contact-method-icon" aria-hidden="true">✉️</div>
             <p class="contact-method-label">Email</p>
-            <a href="mailto:nicole@sharppt.com" class="contact-method-value">nicole@sharpPT.com</a>
+            <span id="email" class="contact-method-value">contact[at]sharpPT[dot]com</span>
             <p class="contact-method-sub">Dr. Sharp replies personally</p>
           </div>
         </div>
@@ -606,12 +618,43 @@
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.07 });
     document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
+    
     // ── Nav scroll ──
     const nav = document.getElementById('main-nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
     }, { passive: true });
+
+    // ── Mobile menu toggle ──
+    const menuBtn  = document.getElementById('nav-menu-btn');
+    const navLinks = document.getElementById('nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('is-open');
+      menuBtn.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close menu when a nav link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', e => {
+      if (!nav.contains(e.target)) {
+        navLinks.classList.remove('is-open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    
+    // Email obfuscation (only runs on pages that have the email element)
+      const emailElement = document.getElementById('email');
+      if (emailElement) {
+          emailElement.innerHTML = '<a href="mailto:contact@sharpPT.com" class="contact-method-value">contact@sharpPT.com</a>';
+      }
   </script>
 </body>
 

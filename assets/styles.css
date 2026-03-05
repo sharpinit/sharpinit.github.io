@@ -795,8 +795,8 @@ footer { background: var(--purple-deep); }
     padding: 7.2rem 2.4rem;
   }
   #strip .inner  { padding-top: 2rem; padding-bottom: 2rem; }
-  #hero .inner   { grid-template-columns: 1fr; min-height: auto; padding: 0; }
-  .hero-right    { display: none; }
+  #hero .inner   { grid-template-columns: 1fr; min-height: auto;}
+  .hero-right    { padding: 6.4rem 0 3.2rem; }
   .hero-left     { padding: 6.4rem 0 3.2rem; }
 
   .who-grid,

@@ -186,17 +186,6 @@ grid-template-columns: 1fr 1fr;
 padding-top: 0; padding-bottom: 0;
 min-height: calc(100vh - 72px);
 }
-#hero::before {
-content: ''; position: absolute; top: -200px; right: -200px;
-width: 700px; height: 700px; border-radius: 50%;
-border: 80px solid rgba(50,194,217,0.07); pointer-events: none;
-aria-hidden: true;
-}
-#hero::after {
-content: ''; position: absolute; bottom: -150px; left: 30%;
-width: 500px; height: 500px; border-radius: 50%;
-border: 60px solid rgba(50,194,217,0.05); pointer-events: none;
-}
 
 .hero-left {
 display: flex; flex-direction: column; justify-content: center;
@@ -700,7 +689,7 @@ pointer-events: none;
 }
 
 .contact-methods {
-display: grid; grid-template-columns: repeat(3, 1fr);
+display: grid; grid-template-columns: repeat(2, 1fr);
 gap: 1.5px; background: rgba(255,255,255,0.06);
 max-width: 900px; margin: 0 auto 4rem;
 border-radius: 8px; overflow: hidden;

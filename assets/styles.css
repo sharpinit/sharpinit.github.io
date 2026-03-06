@@ -89,7 +89,7 @@ p, li,
   max-width: 65ch;
 }
 
-.section-h2  { max-width: 60ch; }
+/* .section-h2  { max-width: 60ch; } */
 .section-lead{ max-width: 60ch; }
 .hero-h1     { max-width: 18ch; }
 

@@ -163,7 +163,9 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(46,26,71,0.4); }
 /* ── HERO ── */
 #hero {
   min-height: 100vh;
-  background: var(--purple);
+  background: var(--purple) url(../assets/Hero_BG.png);
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
   padding-top: 72px;
   overflow: hidden;
 }

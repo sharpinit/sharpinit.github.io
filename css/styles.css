@@ -18,6 +18,7 @@
         --space-sm: 1.5rem;
         --space-md: 2rem;
         --space-lg: 6rem;
+        --space-xlg: 12rem;
         
         /* Other */
         --border-radius: 4px;
@@ -123,7 +124,7 @@ li {
 /* Layout */
 .container {
     width: 90%;
-    max-width: 1024px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -211,7 +212,7 @@ header {
 
 /* Hero section */
 .hero {
-    padding: var(--space-lg) 0;
+    padding: var(--space-xlg) 0;
 }
 
 .hero h1, .hero p {
@@ -274,7 +275,7 @@ a.links:focus {
 /* Work section */
 .work-section {
     background-color: var(--color-background-alt);
-    padding: var(--space-lg) 0;
+    padding: var(--space-xlg) 0;
 }
 
 .project-grid {
@@ -344,7 +345,7 @@ a.links:focus {
 }
 /* Company section */
 .company {
-    padding: var(--space-lg) 0;
+    padding: var(--space-xlg) 0;
     background-color: var(--color-background);
 }
 .co-content {
@@ -374,7 +375,7 @@ a.links:focus {
 
 /* About section */
 .about-section {
-    padding: var(--space-lg) 0;
+    padding: var(--space-xlg) 0;
 }
 
 .img-content {
@@ -415,7 +416,7 @@ a.links:focus {
 /* Contact section */
 .contact-section {
     background-color: var(--color-background-alt);
-    padding: var(--space-lg) 0;
+    padding: var(--space-xlg) 0;
 }
 
 .contact-section p, .contact-section h2 {
